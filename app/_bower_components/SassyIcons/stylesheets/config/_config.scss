@@ -1,0 +1,70 @@
+
+// SassyIcons: configuration
+// -------------------------
+
+
+/**
+ * Default settings.
+ * ---
+ * @type Map
+ */
+$icons-defaults: (
+
+  // Space around sprites in generated spritemap.
+  // Useful with `$offset` parameter.
+  // This setting is global for all spritemaps.
+  // Can be set per spritemap with the `$spacing` parameter.
+  spacing: 0,
+
+  // Main icons directory. `sprite-map-create()`, base for sub dirs.
+  dir: "icons",
+
+  // Name of the png sub-folders.
+  dir-png: "png",
+
+  // Name of the hidpi png sub-folders.
+  dir-hidpi: "png_2x",
+
+  // Scale of the hidpi pngs.
+  hidpi-scale: 2,
+
+  // Minimum resolution ratio used in the hidpi media query.
+  hidpi-ratio: 1.3,
+
+  // Whether to embed icons as data URI in the `icon-single()` mixin.
+  single-embed: true,
+
+  // Default file format unless overridden by parameter, svg | png.
+  format: "svg",
+
+  // Whether to support legacy browsers, svg fallback.
+  legacy: true
+
+);
+
+
+/**
+ * User settings.
+ * ---
+ * @type Map
+ */
+$icons-settings: () !default;
+
+
+/**
+ * Retrieve a configuration item.
+ * ---
+ * @access private
+ * ---
+ * @param {String} $key - configuration item key
+ * ---
+ * @return {*}
+ */
+@function conf($key) {
+  @if not map-has-key($icons-defaults, $key) {
+    @warn "No item `#{$key}` found in configuration.";
+    @return false;
+  }
+
+  @return map-get(map-merge($icons-defaults, $icons-settings), $key);
+}

@@ -1,0 +1,23 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="/_bower_components/jquery.js"><\/script>')</script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<!-- build:js({app,.tmp}) /js/script.js -->
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+
+<!-- endbuild -->
+<script src="/_bower_components/superfish/dist/js/superfish.min.js"></script>
+<script src="/_bower_components/tooltipster/js/jquery.tooltipster.js"></script>
+{% if page.url == '/cohortIV/index.html' %}{% include /C4/C4-map-script.html %}{% endif %}
+{% if page.url == '/cohortIV/C4-timeline.html' %}{% include /C4/C4-timeline-script.html %}{% endif %}
+
+{% if page.url == '/medical/index.html' %}{% include /MG/MG-map-script.html %}{% endif %}
+{% if page.url == '/medical/MG-timeline.html' %}{% include /MG/MG-timeline-script.html %}{% endif %}
+
+{% if page.url == '/cohortV/index.html' %}{% include /C5/C5-map-script.html %}{% endif %}
+{% if page.url == '/cohortV/C5-timeline.html' %}{% include /C5/C5-timeline-script.html %}{% endif %}
+
+{% if page.url == '/training/index.html' %}{% include /TG/TG-map-script.html %}{% endif %}
+{% if page.url == '/training/TG-timeline.html' %}{% include /TG/TG-timeline-script.html %}{% endif %}
+

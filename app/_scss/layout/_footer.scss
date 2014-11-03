@@ -1,0 +1,29 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+
+.l-footer {
+	@extend %page-margins;
+	border-top: 1px dotted $gray;
+	padding-top:0.75em;
+	margin-top:1em;
+	margin-bottom:2em;
+}
+.footer {
+	&--footer-text {
+		font-size: 0.85em;
+		}
+	&--samhsa-logo {
+		background-image: url(/img/samhsa_logo.svg);
+		background-size: 141px 35px;
+		height: 35px;
+		width: 141px;
+		margin: 0;
+		background-repeat: no-repeat;
+		text-indent:-99999px;
+		float: right;
+	}
+}
+.no-svg .footer--samhsa-logo {
+		background-image: url(/img/samhsa_logo.png);	
+}

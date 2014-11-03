@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <!-- build:css({app,.tmp}) /css/main.css -->
+    <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/_bower_components/tooltipster/css/tooltipster.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) /js/head-scripts.js -->
+    <!-- Replace with a custom modernizer build for production -->
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body {% if page.cohort != null %}class="{{ page.cohort }}"{% endif %}>
+    <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+    {% include header.html %}
+    {% include nav-primary.html %}
+</header>
+{% if page.cohort != null %}{% include nav-cohort.html %}{% endif %}
+<div class="l-main">{{ content }}</div>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

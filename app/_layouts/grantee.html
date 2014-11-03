@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% include custom-variables.html %}
+{% assign data_include = '~/~-*-data.html' | replace: '~', page.cohort | replace: '*', page.grantee %}
+<h1>{{ grantee_name }}{% if grantee_name_secondary != null %}<br><span class="sub-title">{{ grantee_name_secondary }}</span>{% endif %}</h1>
+<ul class="tabs clearfix">
+	<li><a href="{{ page.cohort }}-{{ page.grantee }}-info.html"{% if page.title == 'Program Information' %} class="ui-state-active"{% endif %}>Program Information</a></li>
+	<li><a href="{{ page.cohort }}-{{ page.grantee }}-visit.html"{% if page.title == 'Site Visit Report' %} class="ui-state-active"{% endif %}>Site Visit Report</a></li>
+</ul>
+<div class="grantee-content clearfix">
+	<div class="grantee-content-left">{{ content }}</div>
+	<div class="grantee-content-right">
+<img src="/img/{{ page.cohort }}-{{ page.grantee }}-site.jpg" class="grantee-photo" alt="{{ grantee_name }}">
+{% include {{data_include}} %}
+<div class="grantee-pdf">
+    <a href="pdf/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/{{ page.cohort }}-{{ page.grantee }}-pdf.jpg" alt="PDF of {{ grantee_name }}'s Site Visit Report">Site Report (PDF {{ page.pdf-size }})</a>
+</div>
+		</div>
+</div>

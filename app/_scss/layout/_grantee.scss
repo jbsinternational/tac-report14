@@ -1,0 +1,45 @@
+.grantee-content {
+	@extend .content;
+	> div {
+		float: left;
+		@include box-sizing(border-box);
+	}
+	&-left {
+		width: 60%;
+		padding-right: 25px;
+	}
+	&-right {
+		width: 40%;
+	}
+	.accordion-content {
+		ul {
+			padding-left: 25px;
+			margin-top: 0px;
+		}
+		li {
+			margin-bottom: 5px;
+		}
+		p + ul {
+			margin-top: 10px;
+		}
+	}
+}
+.grantee-profile, .grantee-visit {
+	font-size: 1.1em;
+	margin-bottom: 25px;
+}
+.grantee-photo {
+	margin-bottom: 25px;
+	float: right;
+	max-width: 364px
+}
+.grantee-pdf {
+	clear: both;
+	text-align: center;
+	img {
+		display: block;
+		margin: 15px auto;
+		max-height: 175px;
+		border: 1px solid $light-gray;
+	}
+}

@@ -1,0 +1,109 @@
+/* styling for home aka index.html */
+
+@mixin cohort-block ($block-color) { 
+	a:link, a:visited {
+	background-color: tint($block-color,82%);
+	border-color: $block-color;
+	h4 {
+		color: $block-color;
+		}
+	}
+	a:hover {
+		h4 {
+			color: #fff;
+		}
+		background-color: tint($block-color,12%);
+	}
+}
+@mixin cohort-colortag($tag-color,$size) {
+		content: "";
+		display: inline-block;
+		height: $size;
+		width: $size;
+		border-radius: 50%;
+		background-color: $tag-color;
+		;
+}
+.home--intro-text, .home--cohort-button-text {
+	@extend h5;
+	margin: 1em 0;
+}
+.home--map {display: none; z-index:5; position: absolute;
+	&-container {
+	    position:relative;
+	    height: 555px;
+	    width:960px;    
+	}
+	&-C123--key {
+		position:absolute;
+		right:4em;
+		top: 25em;
+		margin: 0;
+		list-style: none;	
+	}
+	&-C1::before {
+		@include cohort-colortag($C1,12px);
+		margin-right: 5px;
+	}
+	&-C2::before {
+		@include cohort-colortag($C2,12px);
+		margin-right: 5px;
+	}
+	&-C3::before {
+		@include cohort-colortag($C3,12px);
+		margin-right: 5px;
+	}
+}
+#map-base {display: block; z-index:2}
+
+.home--cohorts {
+	clear: both;
+}
+.home--cohort-button {
+	float:left;
+	width: 25%;
+	@include box-sizing(border-box);
+	a:link, a:visited {
+		color:#000;
+		border-top-width: 0.75em;
+		border-top-style: solid;
+		height: 12em;
+		display: block;	
+		padding: 0.5em 0.75em;
+		margin-right: 1.25em;
+		margin-bottom: 1.25em;
+	}
+	a:hover {
+		color: #fff;
+	}
+	&:nth-child(4) a {
+		margin-right:0;
+	}
+	&.home-cohort-MG {
+		@include cohort-block($MG);
+
+	}
+	&.home-cohort-TG {
+		@include cohort-block($TG);
+
+	}
+	&.home-cohort-C123 {
+		@include cohort-block($C123);
+		width: 100%;
+		a:link, a:visited {
+		height: 6em;
+		background-color: tint($gray,82%);
+		margin-left:0;
+		margin-right:0;
+		}
+		a:hover {
+			background-color: tint($C123,12%);
+		}
+	}
+	&.home-cohort-C4 {
+		@include cohort-block($C4);
+	}
+	&.home-cohort-C5 {
+		@include cohort-block($C5);
+	}
+}

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% include custom-variables.html %}
+{% if page.parent == 'performance' %}<h1>Review Overall Performance</h1>{% endif %}
+{% if page.parent == 'background' %}<h1>Review Background</h1>{% endif %}
+{% if page.parent != NULL %}
+	<ul class="tabs clearfix">
+		{% if page.parent == 'performance' %}
+		<li><a href="{{ page.cohort }}-performance.html"{% if page.title == 'Overall Performance of Sites Visited' %} class="ui-state-active"{% endif %}>Overall Performance</a></li>
+		<li><a href="{{ page.cohort }}-progress.html"{% if page.title == 'Progress Towards Screen Goals' %} class="ui-state-active"{% endif %}>Progress Towards Screen Goals</a></li>
+		<li><a href="{{ page.cohort }}-workflows.html"{% if page.title == 'Sample Workflows' %} class="ui-state-active"{% endif %}>Sample Workflows</a></li>
+		<li><a href="{{ page.cohort }}-prescreen.html"{% if page.title == 'Sample Pre-screen' %} class="ui-state-active"{% endif %}>Sample Pre-screen</a></li>
+		{% if page.cohort != 'TG' %}<li><a href="{{ page.cohort }}-websites.html"{% if page.title == 'SBIRT Websites' %} class="ui-state-active"{% endif %}>Websites</a></li>{% endif %}
+		{% endif %}
+		{% if page.parent == 'background' %}
+		<li><a href="{{ page.cohort }}-background.html"{% if page.title == 'About SBIRT' %} class="ui-state-active"{% endif %}>About SBIRT and {{ cohort_name }}</a></li>
+		<li><a href="{{ page.cohort }}-visits.html"{% if page.title == 'About Implementation Visits' %} class="ui-state-active"{% endif %}>About Implementation Visits</a></li>
+		{% endif %}
+	</ul>
+{% endif %}
+<div class="content clearfix">
+	{{ content }}
+</div>

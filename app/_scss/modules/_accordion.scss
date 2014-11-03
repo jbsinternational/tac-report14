@@ -1,0 +1,85 @@
+/* ==========================================================================   
+   ACCORDION
+   ========================================================================== */
+#accordion-container {
+    background: none;
+    padding: 0 0 0 0;
+}
+
+.accordion-header {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    padding: 7px 30px 5px 10px;
+    cursor: pointer;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.ui-state-default {
+    position: relative;
+    background-color: $light-gray;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    color: $color-link;
+    @include box-shadow(rgba(black, 0.05) 0 0 20px 0);
+    &:after {
+        content: " ";
+        width: 14px;
+        height: 14px;
+        background-image: url(/img/accordion-icons.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: absolute;
+        right: 15px;
+    }
+    &:hover {
+        background-color: $med-gray;
+        background-repeat: no-repeat;
+        background-position: right 50%;
+        color: $color-link-hover;
+    }
+}
+.ui-state-active {
+    // background-color: rgb(0, 182, 238);
+    // @include filter-gradient(#00b6ee, #009ece, vertical);
+    // @include background-image(linear-gradient(top, rgba(0, 182, 238, 1) 0%, rgba(0, 158, 206, 1) 100%));
+    @include box-shadow(rgba(black, 0.05) 0 0 20px 0);
+    color: #fff;
+                .C4 & {
+                    background-color: $C4;
+                }
+                .C5 & {
+                    background-color: $C5;
+                }
+                .MG & {
+                    background-color: $MG;
+                }
+                .TG & {
+                    background-color: $TG;
+                }
+    &:hover {
+        background-color: $med-gray;
+    }
+    &:after {
+        background-position: -14px -14px;
+    }
+}
+.accordion-content {
+    background-color: #FFF;
+    -webkit-box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 20px 20px 30px 20px;
+    position: relative;
+    top: -10px;
+}
+
+.accordion-header, .accordion-content {
+    margin-bottom: 10px;
+}
+
+.accordion-content p {
+    margin: 0 0 5px 0;
+}

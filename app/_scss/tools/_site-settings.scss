@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Html 5 Element
+$audio-canvas-video: false; // True | False
+
+// Fonts
+$font1: "Source Sans Pro", sans-serif;
+$font2: Georgia, serif;
+
+// = Colors
+// -----------------------------
+
+$blue: #21678b;
+$orange: #f89728;
+$gray: #8b8d8f;
+$med-gray: #bfc0c2;
+$light-gray: #ececec;
+$red: #df2e30;
+$green: #a2cb53;
+
+$color1: $blue;
+$color2: $orange;
+
+$C1: #99c2cc; // Cohort I
+$C2: #428ea1; // Cohort II
+$C3: $blue;   // Cohort III
+$C4: $orange; // Cohort IV
+$C5: #4b831f; // Cohort V
+$C123: $blue; // Cohorts I-III
+$MG: #46a3d2; // Medical Grantees
+$TG: #892829; // Training Grantees
+
+// Text
+$color-text-base: #212121;
+
+// link
+$color-link: #0189cc;
+$color-link-hover: darken($color-link, 10%);
+
+// Mixin Placeholder
+$color-mixin-placeholder: #cdcdcd;
+
+// Selection
+$color-selection: $color1;
+
+// Btn
+$bg-btn: #555;
+$bg-btn-hover: darken($bg-btn, 10%);
+$clr-btn: #212121;
+$clr-btn-hover: darken($clr-btn, 10%);
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);
+
+// = Prefix
+// -----------------------------
+
+$prefix-for-webkit:    true !default;
+$prefix-for-mozilla:   true !default;
+$prefix-for-microsoft: true !default;
+$prefix-for-opera:     true !default;
+$prefix-for-spec:      true !default; // required for keyframe mixin
+
+// = Responsive
+// -----------------------------
+
+$width-large: 75em; // 1200/16
+$width-medium: 62em; // 992/16
+$width-small: 48em; // 768/16
+
+%page-margins {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}

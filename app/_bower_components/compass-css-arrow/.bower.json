@@ -1,0 +1,14 @@
+{
+  "name": "compass-css-arrow",
+  "homepage": "https://github.com/msadouni/compass-css-arrow",
+  "version": "0.0.4",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.4",
+    "commit": "3ac34935bb8f7b0fd60eca4ef780d20b1896319e"
+  },
+  "_source": "https://github.com/msadouni/compass-css-arrow.git",
+  "_target": "~0.0.4",
+  "_originalSource": "https://github.com/msadouni/compass-css-arrow.git"
+}

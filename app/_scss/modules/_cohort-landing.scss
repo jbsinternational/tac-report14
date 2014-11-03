@@ -1,0 +1,22 @@
+@import "base/base";
+
+.cohort-title-block {
+	border-bottom: 1px dotted $gray;
+	margin-bottom: 0.5em;
+	position: relative;
+	> * {
+		margin-bottom:0.15em;
+	}
+	.cohort-date {
+		position: absolute;
+		right: 0;
+		bottom: 0px;
+		text-transform: uppercase;
+		@extend h4;
+		color: shade($gray, 50%);
+	}
+}
+.cohort-intro {
+	@extend h5;
+	margin-bottom: 1em;
+}
