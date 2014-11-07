@@ -36,6 +36,18 @@
 	@extend .nav-cohort;
 	background-color: $C4;
 }
+.nav-cohort-C1 {
+	@extend .nav-cohort;
+	background-color: $C1;
+}
+.nav-cohort-C2 {
+	@extend .nav-cohort;
+	background-color: $C2;
+}
+.nav-cohort-C3 {
+	@extend .nav-cohort;
+	background-color: $C2;
+}
 .nav-cohort-C5 {
 	@extend .nav-cohort;
 	background-color: $C5;
