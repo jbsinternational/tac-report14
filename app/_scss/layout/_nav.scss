@@ -32,10 +32,7 @@
 	}
 }
 }
-.nav-cohort-C4 {
-	@extend .nav-cohort;
-	background-color: $C4;
-}
+
 .nav-cohort-C1 {
 	@extend .nav-cohort;
 	background-color: $C1;
@@ -46,19 +43,7 @@
 }
 .nav-cohort-C3 {
 	@extend .nav-cohort;
-	background-color: $C2;
-}
-.nav-cohort-C5 {
-	@extend .nav-cohort;
-	background-color: $C5;
-}
-.nav-cohort-MG {
-	@extend .nav-cohort;
-	background-color: $MG;
-}
-.nav-cohort-TG {
-	@extend .nav-cohort;
-	background-color: $TG;
+	background-color: $C3;
 }
 .nav-cohort-inner {
 	@extend %page-margins;
@@ -194,11 +179,9 @@
 
 .active {
 	background-color: $gray;
-	&-C4 {background-color: $C4;}
-	&-C5 {background-color: $C5;}
-	&-C123 {background-color: $C123;}
-	&-MG {background-color: $MG;}
-	&-TG {background-color: $TG;}
+	&-C1 {background-color: $C1;}
+	&-C2 {background-color: $C2;}
+	&-C3 {background-color: $C3;}
 }
 .nav-grantee-location {
 	font-size:0.8em;

@@ -3,34 +3,35 @@
    ======================= */
 @import "compass/css3";
 header {
-	background-image:url(/img/sbirt_header_bg_1x.png);
+	// background-image:url(/img/sbirt_header_bg_1x.png);
 	// background-size: 2px 2px;
+	background-color:$blue;
+	@include box-shadow (rgba(0,0,0,0.4) 0px 0px 103px -16px inset);
 }
 .header {
 
 	&--logo {
-		background-image: url(/img/sbirt_logo.png);
-		background-size: 141px 100px;
-		height: 112px;
-		width: 145px;
-		margin: 10px 20px 0 0;
-		background-repeat: no-repeat;
-		text-indent:-99999px;
+		margin: 10px 15px 15px 0;
+		// background-repeat: no-repeat;
+		// text-indent:-99999px;
 		float: left;
+		color: white;
+		font-size: 5.5em;
+		line-height: 1em;
 		}
 	&--site-title {
 		color: white;
-		font-size: 2.3em;
-		padding-top: 0.65em;
+		font-size: 1.9em;
+		padding-top: 0.73em;
 		line-height: 1.2em;
 	}
 	&--site-subtitle {
 		color: white;
-		font-size: 1.4em;
+		font-size: 1.5em;
 		overflow: auto;
 		line-height: 1.4em;
 		margin-top: .15em;
-
+		font-weight: 300;
 	}
 	}
 .l-header {

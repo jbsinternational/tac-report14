@@ -1,8 +1,8 @@
 {
-  "name": "sbirt-rpt14",
+  "name": "tac-report14",
   "private": true,
   "version": "0.0.0",
-  "description": "Yeoman workflow for sbirt-rpt14",
+  "description": "Yeoman workflow for tac-report14",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.6.4",
