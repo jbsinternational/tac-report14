@@ -20,6 +20,10 @@
             &.ui-state-active {
                 z-index: 10;
                 color: #fff;
+                .C3 & {
+                    background-color: $C3;
+                    @include css-arrow(bottom, 8px, $C3, 0, transparent, none);
+                }
                 .C4 & {
                     background-color: $C4;
                     @include css-arrow(bottom, 8px, $C4, 0, transparent, none);
@@ -27,14 +31,6 @@
                 .C5 & {
                     background-color: $C5;
                     @include css-arrow(bottom, 8px, $C5, 0, transparent, none);
-                }
-                .MG & {
-                    background-color: $MG;
-                    @include css-arrow(bottom, 8px, $MG, 0, transparent, none);
-                }
-                .TG & {
-                    background-color: $TG;
-                    @include css-arrow(bottom, 8px, $TG, 0, transparent, none);
                 }
             }
         }

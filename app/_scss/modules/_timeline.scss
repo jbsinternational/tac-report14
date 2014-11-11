@@ -1,6 +1,10 @@
 .timeline {
 	background-repeat: no-repeat repeat;
   	background-position: center;
+  	.C3 & {
+  		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEiPgo8cmVjdCB4PSIwIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSIjZjg5NzI4Ij48L3JlY3Q+Cjwvc3ZnPg==");
+  	}
+
   	.C4 & {
   		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEiPgo8cmVjdCB4PSIwIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSIjZjg5NzI4Ij48L3JlY3Q+Cjwvc3ZnPg==");
   	}
@@ -52,6 +56,7 @@
 		z-index:5;
 		margin-top:25px;
 		.MG & { background-color: $MG; }
+		.C3 & { background-color: $C3; }
 		.C4 & { background-color: $C4; }
 		.C5 & { background-color: $C5; }
 		.TG & { background-color: $TG; }
@@ -60,6 +65,7 @@
 		@include border-radius(50%);
 		border: 1px solid gray;
 		.MG & { border-color: $MG; }
+		.C3 & { border-color: $C3; }
 		.C4 & { border-color: $C4; }
 		.C5 & { border-color: $C5; }
 		.TG & { border-color: $TG; }
@@ -93,6 +99,7 @@
 	&--grantee-info {
 		border-top: 1px dotted gray;
 		.MG & { border-color: $MG; }
+		.C3 & { border-color: $C3; }
 		.C4 & { border-color: $C4; }
 		.C5 & { border-color: $C5; }
 		.TG & { border-color: $TG; }
