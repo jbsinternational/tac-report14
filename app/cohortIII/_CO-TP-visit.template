@@ -1,0 +1,177 @@
+--- 
+layout: grantee 
+cohort: C4 
+grantee: AZ
+pdf-size: 1.2 MB
+title: Site Visit Report
+---
+<!-- Visit Information -->
+
+
+<div class="grantee-visit">
+    <p>
+        <span class="label">Dates:</span>
+        <br>ReplaceMe</p>
+    <p>
+        <span class="label">Site Visit Team Members:</span>
+        <br>Karl White, Ed.D.
+<br>Steve O’Neil, M.A.
+<br>Beth Cohen, M.P.H.
+</p>
+    <p>
+        <span class="label">Sites Visited:</span>
+<p>ReplaceMe
+<br>ReplaceMe
+<br>ReplaceMe
+<br>ReplaceMe</p>
+</div>
+
+
+    <div id="accordion-container">
+<!-- 
+<h3 class="accordion-header">ReplaceMe</h3>
+        <div class="accordion-content">
+            <p>
+                <b>ReplaceMe</b>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+
+            <p>
+                <strong>ReplaceMe</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+        </div>
+-->
+<h3 class="accordion-header">Grantee Organization and Leadership</h3>
+        <div class="accordion-content">
+            <p>
+                <b>Strengths:</b>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+
+            <p>
+                <strong>Challenges:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+        </div>
+
+        <h3 class="accordion-header">SBIRT Implementation</h3>
+        <div class="accordion-content">
+            <p>
+                <strong>Strengths:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+
+            <p>
+                <strong>Challenges:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+        </div>
+
+        <h3 class="accordion-header">Training/Workforce Development</h3>
+        <div class="accordion-content">
+            <p>
+                <strong>Strengths:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+
+            <p>
+                <strong>Challenges:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+        </div>
+
+        <h3 class="accordion-header">Sustainability</h3>
+        <div class="accordion-content">
+            <p>
+                <strong>Strengths:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+
+            <p>
+                <strong>Challenges:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+        </div>
+
+        <h3 class="accordion-header">Policy Steering Committee</h3>
+        <div class="accordion-content">
+            <p>
+                <strong>Strengths:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+            </ul>
+
+            <p>
+                <strong>Challenges:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+            </ul>
+        </div>
+
+        <h3 class="accordion-header">Evaluation</h3>
+        <div class="accordion-content">
+            <p>
+                <strong>Strengths:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+
+            <p>
+                <strong>Challenges:</strong>
+            </p>
+            <ul>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+                <li>ReplaceMe</li>
+            </ul>
+        </div>
+
+</div>
