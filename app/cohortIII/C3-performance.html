@@ -2,9 +2,10 @@
 layout: content
 parent: performance 
 cohort: C3
-title: Review Overall Performance of Cohort III Sites Visited
+title: Review Overall Performance
 ---
-<h2>{{ page.title }}</h2>
+{% include custom-variables.html %}
+<h2>{{ page.title }} of {{ cohort_name }} Sites Visited</h2>
 <div id="accordion-container">
 
     <h3 class="accordion-header">Program Vision and Design</h3>
