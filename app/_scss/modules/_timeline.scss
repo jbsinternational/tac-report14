@@ -1,21 +1,14 @@
 .timeline {
 	background-repeat: no-repeat repeat;
   	background-position: center;
-  	.C3 & {
+  	.C1 & {
   		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEiPgo8cmVjdCB4PSIwIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSIjZjg5NzI4Ij48L3JlY3Q+Cjwvc3ZnPg==");
   	}
-
-  	.C4 & {
-  		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEiPgo8cmVjdCB4PSIwIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSIjZjg5NzI4Ij48L3JlY3Q+Cjwvc3ZnPg==");
-  	}
-  	.C5 & {
+  	.C2 & {
   		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEiPgo8cmVjdCB4PSIwIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSIjNGI4MzFmIj48L3JlY3Q+Cjwvc3ZnPg==");
   	}
-  	.MG & {
+  	.C3 & {
   		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEiPgo8cmVjdCB4PSIwIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSIjNDZhM2QyIj48L3JlY3Q+Cjwvc3ZnPg==");
-  	}
-  	.TG & {
-  		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEiPgo8cmVjdCB4PSIwIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSIjODkyODI5Ij48L3JlY3Q+Cjwvc3ZnPg==");
   	}
 	padding-left: 0;
 	text-align: center;
@@ -25,7 +18,7 @@
 	}
 	&--vline {
 		// width: 4px;
-		// background-color: $C4;
+		// background-color: $C1;
 		// height: 200%;
 		// position: absolute;
 		// left: 50%;
@@ -55,20 +48,16 @@
 		position: relative;
 		z-index:5;
 		margin-top:25px;
-		.MG & { background-color: $MG; }
 		.C3 & { background-color: $C3; }
-		.C4 & { background-color: $C4; }
-		.C5 & { background-color: $C5; }
-		.TG & { background-color: $TG; }
+		.C1 & { background-color: $C1; }
+		.C2 & { background-color: $C2; }
 	}
 	&--image {
 		@include border-radius(50%);
 		border: 1px solid gray;
-		.MG & { border-color: $MG; }
 		.C3 & { border-color: $C3; }
-		.C4 & { border-color: $C4; }
-		.C5 & { border-color: $C5; }
-		.TG & { border-color: $TG; }
+		.C1 & { border-color: $C1; }
+		.C2 & { border-color: $C2; }
 		position: relative;
 		z-index:5;
 		height: 115px;
@@ -98,11 +87,9 @@
 	}
 	&--grantee-info {
 		border-top: 1px dotted gray;
-		.MG & { border-color: $MG; }
 		.C3 & { border-color: $C3; }
-		.C4 & { border-color: $C4; }
-		.C5 & { border-color: $C5; }
-		.TG & { border-color: $TG; }
+		.C1 & { border-color: $C1; }
+		.C2 & { border-color: $C2; }
 
 	p {
 		width: 300px;

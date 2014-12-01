@@ -47,17 +47,14 @@
     // @include background-image(linear-gradient(top, rgba(0, 182, 238, 1) 0%, rgba(0, 158, 206, 1) 100%));
     @include box-shadow(rgba(black, 0.05) 0 0 20px 0);
     color: #fff;
-                .C4 & {
-                    background-color: $C4;
+                .C1 & {
+                    background-color: $C1;
                 }
-                .C5 & {
-                    background-color: $C5;
+                .C2 & {
+                    background-color: $C2;
                 }
-                .MG & {
-                    background-color: $MG;
-                }
-                .TG & {
-                    background-color: $TG;
+                .C3 & {
+                    background-color: $C3;
                 }
                 .C3 & {
                     background-color: $C3;

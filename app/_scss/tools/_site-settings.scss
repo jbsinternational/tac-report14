@@ -8,8 +8,8 @@
 $audio-canvas-video: false; // True | False
 
 // Fonts
-$font1: "Source Sans Pro", sans-serif;
-$font2: Georgia, serif;
+$font1: "Lato", sans-serif;
+$font2: "Titillium Web", sans-serif;
 
 // = Colors
 // -----------------------------
@@ -20,20 +20,14 @@ $gray: #8b8d8f;
 $med-gray: #bfc0c2;
 $light-gray: #ececec;
 $red: #df2e30;
-$green: #a2cb53;
-
+$green: #4b831f;
 
 $color1: $blue;
 $color2: $orange;
 
-$C1: #99c2cc; // Cohort I
-$C2: #428ea1; // Cohort II
-$C3: $green;   // Cohort III
-$C4: $orange; // Cohort IV
-$C5: #4b831f; // Cohort V
-$C123: $blue; // Cohorts I-III
-$MG: #46a3d2; // Medical Grantees
-$TG: #892829; // Training Grantees
+$C1: #46a3d2; // Cohort I
+$C2: #f89728; // Cohort II
+$C3: #4b831f; // Cohort III
 
 // Text
 $color-text-base: #212121;
