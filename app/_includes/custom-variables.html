@@ -1,24 +1,25 @@
 <!-- Cohorts -->
-{% if page.cohort == 'C4' %} {% assign cohort_name = 'State Grantees, Cohort IV' %} {% endif %}
-{% if page.cohort == 'C5' %} {% assign cohort_name = 'State Grantees, Cohort V' %} {% endif %}
-{% if page.cohort == 'TG' %} {% assign cohort_name = 'Training Grantees' %} {% endif %}
-{% if page.cohort == 'MG' %} {% assign cohort_name = 'Medical Grantees' %} {% endif %}
 {% if page.cohort == 'C1' %} {% assign cohort_name = 'TAC, Cohort I' %} {% endif %}
-{% if page.cohort == 'C3' %} {% assign cohort_name = 'Cohort III' %} {% endif %}
+{% if page.cohort == 'C2' %} {% assign cohort_name = 'TAC, Cohort II' %} {% endif %}
+{% if page.cohort == 'C3' %} {% assign cohort_name = 'TAC, Cohort III' %} {% endif %}
 
-<!-- Cohort IV -->
-{% if page.cohort == 'C4' and page.grantee == 'AS' %} {% assign grantee_name = 'American Samoa' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'AZ' %} {% assign grantee_name = 'Arizona' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'CO' %} {% assign grantee_name = 'Colorado' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'CT' %} {% assign grantee_name = 'Connecticut' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'IL' %} {% assign grantee_name = 'Illinois' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'IN' %} {% assign grantee_name = 'Indiana' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'IA' %} {% assign grantee_name = 'Iowa' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'NJ' %} {% assign grantee_name = 'New Jersey' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'NY' %} {% assign grantee_name = 'New York' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'NC' %} {% assign grantee_name = 'North Carolina' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'TN' %} {% assign grantee_name = 'Tennessee' %} {% endif %}
-{% if page.cohort == 'C4' and page.grantee == 'WA' %} {% assign grantee_name = 'Washington' %} {% endif %}
+<!-- Cohort I -->
+{% if page.cohort == 'C1' and page.grantee == 'OK' %} {% assign grantee_name = 'Central Oklahoma Family Medical Center' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'MA' %} {% assign grantee_name = 'Clinical and Support Options' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'MO' %} {% assign grantee_name = 'First Call' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'IL' %} {% assign grantee_name = 'Human Service Center' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'GA' %} {% assign grantee_name = 'River Edge Behavioral Health' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'FL' %} {% assign grantee_name = 'Spectrum Programs, Inc.' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'KS' %} {% assign grantee_name = 'University of Kansas Medical Center' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'NV' %} {% assign grantee_name = 'WestCare Nevada, Inc.' %} {% endif %}
+
+<!-- Cohort II -->
+{% if page.cohort == 'C2' and page.grantee == 'TN' %} {% assign grantee_name = 'Buffalo Valley' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'WV' %} {% assign grantee_name = 'First Choice Health Services' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'IA' %} {% assign grantee_name = 'Iowa Department of Public Health' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'PA' %} {% assign grantee_name = 'Irene Stacy' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'WI' %} {% assign grantee_name = 'Potawatomi' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'CA' %} {% assign grantee_name = 'Promesa' %} {% endif %}
 
 
 <!-- Cohort III -->
@@ -35,154 +36,3 @@
 {% if page.cohort == 'C3' and page.grantee == 'NY' %} {% assign grantee_name = 'New York' %} {% endif %}
 {% if page.cohort == 'C3' and page.grantee == 'CT' %} {% assign grantee_name = 'Connecticut' %} {% endif %}
 {% if page.cohort == 'C3' and page.grantee == 'MA' %} {% assign grantee_name = 'Massachusetts' %} {% endif %}
-
-
-
-<!-- Cohort V -->
-{% if page.cohort == 'C5' and page.grantee == 'NM' %} {% assign grantee_name = 'New Mexico' %} {% endif %}
-{% if page.cohort == 'C5' and page.grantee == 'NY' %} {% assign grantee_name = 'New York' %} {% endif %}
-{% if page.cohort == 'C5' and page.grantee == 'OH' %} {% assign grantee_name = 'Ohio' %} {% endif %}
-{% if page.cohort == 'C5' and page.grantee == 'SC' %} {% assign grantee_name = 'South Carolina' %} {% endif %}
-{% if page.cohort == 'C5' and page.grantee == 'VT' %} {% assign grantee_name = 'Vermont' %} {% endif %}
-
-<!-- Medical Grantees <--></-->
-{% if page.cohort == 'MG' and page.grantee == 'IL' %} 
-	{% assign grantee_name = 'SBIRT at ACCESS' %} 
-	{% assign grantee_name_secondary = 'ACCESS Community Health Network Medical Center' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'NY' %} 
-	{% assign grantee_name = 'SBIRT-Medical Residency Program' %}  
-	{% assign grantee_name_secondary = 'Albany Medical Center' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'TX-HO' %} 
-	{% assign grantee_name = 'InSight Training for Primary Care Residents' %}  
-	{% assign grantee_name_secondary = 'Baylor College of Medicine' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'MA' %} 
-	{% assign grantee_name = 'Training Residents in Adolescent SBIRT' %}  
-	{% assign grantee_name_secondary = 'Children’s Hospital Boston' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'DC' %} 
-	{% assign grantee_name = 'Howard University SBIRT Medical Residency Program' %}  
-	{% assign grantee_name_secondary = 'Howard University' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'IN' %} 
-	{% assign grantee_name = 'SBIRT Implementation in the Indiana University Educational Innovations Project Medicine Residency Program' %}  
-	{% assign grantee_name_secondary = 'Indiana University Medical Center' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'OH' %} 
-	{% assign grantee_name = 'SBIRT-Medical Residency Program' %}  
-	{% assign grantee_name_secondary = 'Kettering Medical Center' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'GA' %} 
-	{% assign grantee_name = 'Southeastern Consortium for Substance Abuse Training' %}  
-	{% assign grantee_name_secondary = 'Mercer University' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'CA-SA' %} 
-	{% assign grantee_name = 'University of California, San Francisco, Natividad Family Medicine Residency SBIRT Training Program' %}  
-	{% assign grantee_name_secondary = 'Natividad Medical Center' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'OR' %} 
-	{% assign grantee_name = 'SBIRT Oregon Primary Care Initiative' %}  
-	{% assign grantee_name_secondary = 'Oregon Health and Science University' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'CA-SF-GH' %} 
-	{% assign grantee_name = 'SBIRT Medical Residency Program at San Francisco General Hospital' %}  
-	{% assign grantee_name_secondary = 'San Francisco General Hospital' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'CA-SF-UC' %} 
-	{% assign grantee_name = 'SBIRT Collaborative Education Project' %}  
-	{% assign grantee_name_secondary = 'University of California San Francisco' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'MD' %} 
-	{% assign grantee_name = 'University of Maryland' %}  
-	{% assign grantee_name_secondary = 'MD3 (Maryland M.D.s Making a Difference)' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'MO' %} 
-	{% assign grantee_name = 'Training Residents Across Disciplines in SBIRT Services' %}  
-	{% assign grantee_name_secondary = 'University of Missouri' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'PA' %} 
-	{% assign grantee_name = 'SBIRT Medical and Residency Training Program (SMaRT)' %}  
-	{% assign grantee_name_secondary = 'University of Pittsburgh School of Pharmacy' %} 
-{% endif %}
-{% if page.cohort == 'MG' and page.grantee == 'TX-SA' %} 
-	{% assign grantee_name = 'SBIRT-South Texas Area Residency Training (S-START)' %}  
-	{% assign grantee_name_secondary = 'University of Texas Health Science Center at San Antonio' %} 
-{% endif %}
-
-{% if page.cohort == 'MG' and page.grantee == 'CT' %} 
-	{% assign grantee_name = 'SBIRT Training in Yale Residency Programs' %}  
-	{% assign grantee_name_secondary = 'Yale University School of Medicine' %} 
-{% endif %}
-
-<!-- Training Grantees -->
-{% if page.cohort == 'TG' and page.grantee == 'PA' %} 
-	{% assign grantee_name = 'Pennsylvania SBIRT Interdisciplinary Training Program' %}  
-	{% assign grantee_name_secondary = 'Allegheny-Singer Research Institute' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'MA' %} {% assign grantee_name = 'Boston, MA' %} 
-	{% assign grantee_name = 'Training in Adolescent SBIRT for Medical Professionals' %}  
-	{% assign grantee_name_secondary = 'Boston Children’s Hospital  ' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'DC' %} {% assign grantee_name = 'Washington, DC' %}
-{% assign grantee_name = 'Launching SBIRT Into the Community: A Multidisciplinary Approach' %}  
-	{% assign grantee_name_secondary = 'The Catholic University of America ' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'NY' %} {% assign grantee_name = 'Bronx, NY ' %} 
-{% assign grantee_name = 'Enhancing SBIRT Utilization Among Underserved Populations in the Bronx, New York, and Surrounding Urban Areas: A Lehman College Training Initiative for Social Work Students and Medical Residents' %}  
-	{% assign grantee_name_secondary = 'City University of New York, Lehman College' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'IN' %} {% assign grantee_name = 'Indianapolis, IN' %}
-{% assign grantee_name = 'Advancing Multidisciplinary Education for SBIRT' %}  
-	{% assign grantee_name_secondary = 'Indiana University ' %} 
- {% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'GA' %} {% assign grantee_name = 'Macon, GA' %}
-{% assign grantee_name = 'Southeast Consortium for Substance Abuse Training: Advanced Practice Registered Nurses' %}  
-	{% assign grantee_name_secondary = 'Mercer University' %} 
- {% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'AK' %} {% assign grantee_name = 'Anchorage, AK' %} 
-{% assign grantee_name = 'University of Alaska Anchorage SBIRT' %}  
-	{% assign grantee_name_secondary = 'University of Alaska, Anchorage' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'CA' %} {% assign grantee_name = 'Los Angeles, CA' %} 
-{% assign grantee_name = 'Los Angeles SBIRT Network' %}  
-	{% assign grantee_name_secondary = 'University of California, Los Angeles' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'CO' %} {% assign grantee_name = 'Denver, CO' %}
-{% assign grantee_name = 'Nurses Helping Colorado' %}  
-	{% assign grantee_name_secondary = 'University of Colorado Denver' %} 
- {% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'FL' %} {% assign grantee_name = 'Miami, FL' %} 
-{% assign grantee_name = 'Integrating SBIRT Into Primary Care: A School of Nursing Training Program' %}  
-	{% assign grantee_name_secondary = 'University of Miami' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'MO' %} {% assign grantee_name = 'Kansas City, MO' %}
-{% assign grantee_name = 'Transforming the Academic Preparation of Health Professionals: Competency-Based SBIRT Training ' %}  
-	{% assign grantee_name_secondary = 'University of Missouri-Kansas City' %} 
- {% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'SC' %} {% assign grantee_name = 'Columbia, SC' %} 
-{% assign grantee_name = 'InterDisciplinary Collaboration and Implementation of SBIRT Curricula in University of South Carolina ' %}  
-	{% assign grantee_name_secondary = 'University of South Carolina' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'VT' %} {% assign grantee_name = 'Burlington, VT' %} 
-{% assign grantee_name = 'Vermont SBIRT Collaborative: Changing Care Through Systems Redesign and Team-Based Training' %}  
-	{% assign grantee_name_secondary = 'University of Vermont' %} 
-{% endif %}
-
-{% if page.cohort == 'TG' and page.grantee == 'WI' %} {% assign grantee_name = 'Milwaukee, WI' %}
-{% assign grantee_name = 'SBIRT Training for Substance Misuse Program at the University of Wisconsin-Milwaukee' %}  
-	{% assign grantee_name_secondary = 'University of Wisconsin-Milwaukee' %} 
- {% endif %}
