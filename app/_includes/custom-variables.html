@@ -1,8 +1,26 @@
 <!-- Cohorts -->
-{% if page.cohort == 'C1' %} {% assign cohort_name = 'Cohort I' %} {% endif %}
-{% if page.cohort == 'C2' %} {% assign cohort_name = 'Cohort II' %} {% endif %}
-{% if page.cohort == 'C3' %} {% assign cohort_name = 'Cohort III' %} {% endif %}
 
+{% if page.cohort == 'C1' %} {% assign cohort_name = 'TAC, Cohort I' %} {% endif %}
+{% if page.cohort == 'C2' %} {% assign cohort_name = 'TAC, Cohort II' %} {% endif %}
+{% if page.cohort == 'C3' %} {% assign cohort_name = 'TAC, Cohort III' %} {% endif %}
+
+<!-- Cohort I -->
+{% if page.cohort == 'C1' and page.grantee == 'OK' %} {% assign grantee_name = 'Central Oklahoma Family Medical Center' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'MA' %} {% assign grantee_name = 'Clinical and Support Options' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'MO' %} {% assign grantee_name = 'First Call' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'IL' %} {% assign grantee_name = 'Human Service Center' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'GA' %} {% assign grantee_name = 'River Edge Behavioral Health' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'FL' %} {% assign grantee_name = 'Spectrum Programs, Inc.' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'KS' %} {% assign grantee_name = 'University of Kansas Medical Center' %} {% endif %}
+{% if page.cohort == 'C1' and page.grantee == 'NV' %} {% assign grantee_name = 'WestCare Nevada, Inc.' %} {% endif %}
+
+<!-- Cohort II -->
+{% if page.cohort == 'C2' and page.grantee == 'TN' %} {% assign grantee_name = 'Buffalo Valley' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'WV' %} {% assign grantee_name = 'First Choice Health Services' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'IA' %} {% assign grantee_name = 'Iowa Department of Public Health' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'PA' %} {% assign grantee_name = 'Irene Stacy' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'WI' %} {% assign grantee_name = 'Potawatomi' %} {% endif %}
+{% if page.cohort == 'C2' and page.grantee == 'CA' %} {% assign grantee_name = 'Promesa' %} {% endif %}
 
 <!-- Cohort III -->
 {% if page.cohort == 'C3' and page.grantee == 'CA' %} {% assign grantee_name = 'California' %} {% endif %}
@@ -18,6 +36,3 @@
 {% if page.cohort == 'C3' and page.grantee == 'NY' %} {% assign grantee_name = 'New York' %} {% endif %}
 {% if page.cohort == 'C3' and page.grantee == 'CT' %} {% assign grantee_name = 'Connecticut' %} {% endif %}
 {% if page.cohort == 'C3' and page.grantee == 'MA' %} {% assign grantee_name = 'Massachusetts' %} {% endif %}
-
-
-

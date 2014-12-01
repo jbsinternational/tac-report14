@@ -46,7 +46,8 @@
     };
     $( '#accordion-container' ).accordion({
       heightStyle: 'content',
-      icons: icons
+      icons: icons,
+      collapsible: true
     });
         $( '#toggle' ).button().click(function() {
       if ( $( '#accordion-container' ).accordion( 'option', 'icons' ) ) {
