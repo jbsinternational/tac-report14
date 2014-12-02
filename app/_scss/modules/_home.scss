@@ -99,14 +99,6 @@
 
 	} /* Added Section */
 
-	&.home-cohort-MG {
-		@include cohort-block($MG);
-
-	}
-	&.home-cohort-TG {
-		@include cohort-block($TG);
-
-	}
 	&.home-cohort-C123 {
 		@include cohort-block($C123);
 		width: 100%;
@@ -119,11 +111,5 @@
 		a:hover {
 			background-color: tint($C123,12%);
 		}
-	}
-	&.home-cohort-C4 {
-		@include cohort-block($C4);
-	}
-	&.home-cohort-C5 {
-		@include cohort-block($C5);
 	}
 }

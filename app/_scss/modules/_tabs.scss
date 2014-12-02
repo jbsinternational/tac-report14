@@ -24,13 +24,13 @@
                     background-color: $C3;
                     @include css-arrow(bottom, 8px, $C3, 0, transparent, none);
                 }
-                .C4 & {
-                    background-color: $C4;
-                    @include css-arrow(bottom, 8px, $C4, 0, transparent, none);
+                .C2 & {
+                    background-color: $C2;
+                    @include css-arrow(bottom, 8px, $C1, 0, transparent, none);
                 }
-                .C5 & {
-                    background-color: $C5;
-                    @include css-arrow(bottom, 8px, $C5, 0, transparent, none);
+                .C1 & {
+                    background-color: $C1;
+                    @include css-arrow(bottom, 8px, $C1, 0, transparent, none);
                 }
             }
         }
