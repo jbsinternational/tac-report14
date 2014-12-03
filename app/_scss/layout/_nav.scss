@@ -32,7 +32,6 @@
 	}
 }
 }
-
 .nav-cohort-C1 {
 	@extend .nav-cohort;
 	background-color: $C1;
@@ -182,6 +181,7 @@
 	&-C1 {background-color: $C1;}
 	&-C2 {background-color: $C2;}
 	&-C3 {background-color: $C3;}
+	&-C123 {background-color: $C123;}
 }
 .nav-grantee-location {
 	font-size:0.8em;

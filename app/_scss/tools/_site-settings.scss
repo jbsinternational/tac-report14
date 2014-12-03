@@ -15,6 +15,7 @@ $font2: "Titillium Web", sans-serif;
 // -----------------------------
 
 $blue: #21678b;
+$light-blue: #46a3d2;
 $orange: #f89728;
 $gray: #8b8d8f;
 $med-gray: #bfc0c2;
@@ -25,9 +26,10 @@ $green: #4b831f;
 $color1: $blue;
 $color2: $orange;
 
-$C1: #46a3d2; // Cohort I
-$C2: #f89728; // Cohort II
-$C3: #4b831f; // Cohort III
+$C1: $light-blue; // Cohort I
+$C2: $orange; // Cohort II
+$C3: $green; // Cohort III
+$C123: $blue; // Cohorts I-III
 
 // Text
 $color-text-base: #212121;

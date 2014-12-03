@@ -61,31 +61,55 @@
 }
 .home--cohort-button {
 	float:left;
-	width: 33.3333%;
+	width: 25%; /* Olde */
+	width: 33.333%;
 	@include box-sizing(border-box);
 	a:link, a:visited {
 		color:#000;
 		border-top-width: 0.75em;
 		border-top-style: solid;
-		height: 9em;
+		height: 12em;
 		display: block;	
 		padding: 0.5em 0.75em;
-		margin-right: 1.25em;
+		margin-right: 1.25em; /* Olde */
+		margin-right: 1.875em;
 		margin-bottom: 1.25em;
 	}
 	a:hover {
 		color: #fff;
 	}
+	/*&:nth-child(4) a {
+		margin-right:0;
+	}*/
 	&:nth-child(3) a {
 		margin-right:0;
 	}
 	&.home-cohort-C1 {
 		@include cohort-block($C1);
-	}
+
+	} /* Added Section */
+
 	&.home-cohort-C2 {
 		@include cohort-block($C2);
-	}
+
+	} /* Added Section */
+
 	&.home-cohort-C3 {
 		@include cohort-block($C3);
+
+	} /* Added Section */
+
+	&.home-cohort-C123 {
+		@include cohort-block($C123);
+		width: 100%;
+		a:link, a:visited {
+		height: 6em;
+		background-color: tint($gray,82%);
+		margin-left:0;
+		margin-right:0;
+		}
+		a:hover {
+			background-color: tint($C123,12%);
+		}
 	}
 }
