@@ -26,7 +26,7 @@
                 }
                 .C2 & {
                     background-color: $C2;
-                    @include css-arrow(bottom, 8px, $C1, 0, transparent, none);
+                    @include css-arrow(bottom, 8px, $C2, 0, transparent, none);
                 }
                 .C1 & {
                     background-color: $C1;
