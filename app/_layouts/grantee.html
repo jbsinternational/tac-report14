@@ -17,5 +17,31 @@ layout: default
     <a href="pdf/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         <img src="/img/{{ page.cohort }}-{{ page.grantee }}-pdf.jpg" alt="PDF of {{ grantee_name }}'s Site Visit Report">Site Report (PDF {{ page.pdf-size }})</a>
 </div>
+<!-- Additional Data -->
+<div class="grantee-moreData">
+    {% if page.application-size != null %}<a href="application/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Grantee Application (PDF {{ page.application-size }})</a><br/>{% endif %}
+    {% if page.biannual-size != null %}<a href="biannual/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Biannual Report (PDF {{ page.biannual-size }})</a><br/>{% endif %}
+    {% if page.quarterly-size != null %}<a href="quarterly/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Quartely Report (PDF {{ page.quarterly-size }})</a><br/>{% endif %}
+    {% if page.final-size != null %}<a href="final/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Final Report (PDF {{ page.final-size }})</a><br/>{% endif %}
+    {% if page.call-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Call Summary (PDF {{ page.call-size }})</a><br/>{% endif %}
+	{% if page.ta-size != null %}<a href="ta/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        TA Summary Report (PDF {{ page.ta-size }})</a><br/>{% endif %}
+</div>
+
+
+<!-- To Add
+Grantee applications
+• Biannual/Quarterly/Final reports
+• Call summaries
+• TA summary reports -->
+<!-- End Addtional Data -->
+
+
+
 		</div>
 </div>
