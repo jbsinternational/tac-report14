@@ -68,7 +68,7 @@
 		color:#000;
 		border-top-width: 0.75em;
 		border-top-style: solid;
-		height: 6em;
+		height: 8em;
 		display: block;	
 		padding: 0.5em 0.75em;
 		margin-right: 1.25em; /* Olde */
@@ -103,7 +103,7 @@
 		@include cohort-block($C123);
 		width: 100%;
 		a:link, a:visited {
-		height: 6em;
+		height: 8em;
 		background-color: tint($gray,82%);
 		margin-left:0;
 		margin-right:0;
