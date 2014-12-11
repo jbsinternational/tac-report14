@@ -9,9 +9,9 @@ layout: default
 		{% if page.parent == 'performance' %}
 		<li><a href="{{ page.cohort }}-performance.html"{% if page.title == 'Review Overall Performance' %} class="ui-state-active"{% endif %}>Overall Performance</a></li>
 		<li><a href="{{ page.cohort }}-progress.html"{% if page.title == 'Progress Towards Screen Goals' %} class="ui-state-active"{% endif %}>Progress Towards Screen Goals</a></li>
-		<!--<li><a href="{{ page.cohort }}-workflows.html"{% if page.title == 'Sample Workflows' %} class="ui-state-active"{% endif %}>Sample Workflows</a></li>
-		<li><a href="{{ page.cohort }}-prescreen.html"{% if page.title == 'Sample Pre-screen' %} class="ui-state-active"{% endif %}>Sample Pre-screen</a></li>-->
-		{% if page.cohort != 'C3' %}<li><a href="{{ page.cohort }}-websites.html"{% if page.title == 'TAC Websites' %} class="ui-state-active"{% endif %}>Websites</a></li>{% endif %}
+		<li><a href="{{ page.cohort }}-technology.html"{% if page.title == 'Technology Used' %} class="ui-state-active"{% endif %}>Technology Used</a></li>
+		<!--<li><a href="{{ page.cohort }}-prescreen.html"{% if page.title == 'Sample Pre-screen' %} class="ui-state-active"{% endif %}>Sample Pre-screen</a></li>-->
+		<li><a href="{{ page.cohort }}-websites.html"{% if page.title == 'TAC Websites' %} class="ui-state-active"{% endif %}>Websites</a></li>
 		{% endif %}
 		{% if page.parent == 'background' %}
 		<li><a href="{{ page.cohort }}-background.html"{% if page.title == 'About TAC' %} class="ui-state-active"{% endif %}>About TAC and {{ cohort_name }}</a></li>

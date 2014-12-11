@@ -3,41 +3,48 @@
    ======================== */
 
 .table {
-    background: #fff;
-    @include box-shadow(0, 1px, 3px, rgba(#000, .12));
-    @include border-radius(2px);
-    font-size: .875em; /* 14/16 */
-    width: 100%;
-
+    margin-bottom:25px;
+    width: 100%;  
+   @include alternating-rows-and-columns-custom($light-gray, (tint($med-gray,90%)), #222);
+    &--cell-center {
+        text-align: center
+    }
     th {
-        background: $color2;
         color: #fff;
-        padding: .5em .5em .5em 0;
+        padding: 6px 10px 4px;
         text-transform: uppercase;
-        font-weight: 300;
-
+        font-weight: 500;
+        text-align: left;
+            font-size: .875em; /* 14/16 */
         &:first-child {
             padding-left: 1.2em;
-            @include border-radius(2px 0 0 0);
         }
         &:last-child {
-            @include border-radius(0 2px 0 0);
-        }
+        }   
+        .C1 & {
+                background-color: $C1;
+                }
+        .C2 & {
+                    background-color: $C2;
+                }
+        .C3 & {
+                    background-color: $C3;
+                }
+        .C123 & {
+                    background-color: $C123;
+                }        
     }
     tr {
         td {
-            border-bottom: 1px dashed #e9e9e9;
-            padding: .7em 3em .7em 0;
-
+            padding: 6px 10px 4px;  
             &:first-child {
-            	padding-left: 1.2em;
+                // padding-left: 1.2em;
             }
             &:last-child {
-            	padding-right: .7em;
+                // padding-right: .7em;
             }
         }
         &:last-child td {
-            border-bottom: none;
         }
     }
 
@@ -48,4 +55,113 @@
          padding-right: 2em;
         }
     }
+}
+.table--tech-used {
+    width: 90%;
+  border-collapse: collapse;
+  .csstransforms & td {
+    // width: 10px;
+  }
+  .no-csstransforms & th {
+    padding: 5px 10px;
+  }
+  th {
+      height: 80px;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  position: relative;
+  vertical-align: bottom;
+  padding: 0;
+  font-size: 12px;
+  line-height: 0.8;
+    //color:black;
+    //background-color: transparent!important;
+        .C1 & div {
+                background-color: $C1;
+                }
+        .C2 & div {
+                    background-color: $C2;
+                }
+        .C3 & div {
+                    background-color: $C3;
+                }
+        .C123 & div {
+                    background-color: $C123;
+                } 
+  }
+  // td {
+  //   text-align: center;
+  //   padding: 10px 5px;
+  //   border: 1px solid #ccc;
+  // }
+  .csstransforms & th.rotate {
+    height: 140px;
+    white-space: nowrap;
+    // Firefox needs the extra DIV for some reason, otherwise the text disappears if you rotate 
+    > div {
+        -ms-transform:skew(-45deg,0deg);
+  -moz-transform:skew(-45deg,0deg);
+  -webkit-transform:skew(-45deg,0deg);
+  -o-transform:skew(-45deg,0deg);
+  transform:skew(-45deg,0deg);
+position: relative;
+  top: 0px;
+  left: 40px; /* 80 * tan(45) / 2 = 40 where 80 is the height on the cell and 45 is the transform angle*/
+  height: 100%;
+    }
+    > div > span {
+ -ms-transform:skew(45deg,0deg) rotate(315deg);
+  -moz-transform:skew(45deg,0deg) rotate(315deg);
+  -webkit-transform:skew(45deg,0deg) rotate(315deg);
+  -o-transform:skew(45deg,0deg) rotate(315deg);
+  transform:skew(45deg,0deg) rotate(315deg);
+  position: absolute;
+  bottom: 30px; /* 40 cos(45) = 28 with an additional 2px margin*/
+  left: -25px; /*Because it looked good, but there is probably a mathematical link here as well*/
+  display: inline-block;
+  // width: 100%;
+  width: 85px; /* 80 / cos(45) - 40 cos (45) = 85 where 80 is the height of the cell, 40 the width of the cell and 45 the transform angle*/
+  text-align: left;
+  // white-space: nowrap; /*whether to display in one line or not*/
+    }
+  }
+    td.table--row-header {
+    width:200px;
+  }
+}
+.table-header-rotated {
+  border-collapse: collapse;
+  .csstransforms & td {
+    width: 30px;
+  }
+  .no-csstransforms & th {
+    padding: 5px 10px;
+  }
+  td {
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+  }
+  .csstransforms & th.rotate {
+    height: 140px;
+    white-space: nowrap;
+    // Firefox needs the extra DIV for some reason, otherwise the text disappears if you rotate 
+    > div {
+      transform: 
+        // Magic Numbers
+        translate(25px, 51px)
+        // 45 is really 360-45
+        rotate(315deg);
+      width: 30px;
+    }
+    > div > span {
+      border-bottom: 1px solid #ccc;
+      padding: 5px 10px;
+    }
+  }
+  th.row-header {
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+  }
 }

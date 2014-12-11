@@ -1,18 +1,216 @@
 --- 
 layout: content
-parent: technology
+parent: performance
 cohort: C2
 title: Technology Used
 ---
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+var data = google.visualization.arrayToDataTable([
+         ['Technology', 'Utilizations', { role: 'style' }],
+         ['Client Portal', 3, '#f89728'],            
+         ['Computers (Stations)', 1, '#f89728'],            
+         ['EHR', 3, '#f89728'],            
+         ['Email', 0, '#f89728'],            
+         ['(Smart)Phone', 4, '#f89728'],            
+         ['Mobile Applications', 3, '#f89728'],            
+         ['Social Media', 0, '#f89728'],            
+         ['Tablets', 3, '#f89728'],            
+         ['Texting', 3, '#f89728'],            
+         ['Video Conferencing', 4, '#f89728'],            
+         ['VR Platform', 0, '#f89728'],            
+         ['Website', 3, '#f89728'],            
+         ['Other', 1, '#f89728'],            
+
+      ]);
+
+        var options = {
+          // title: 'Company Performance',
+         hAxis: { ticks: [0,1,2,3,4,5,6], title: 'Number of Cohort II grantees who utilized specified technology' },
+         legend: 'none',
+         chartArea: {width: '68%', height: '83%'},
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
 <h2>{{ page.title }}</h2>
 
-<div id="accordion-container">
+<div id="chart_div" style="height: 450px;"></div>
+<p><a href="/cohortII/pdf/C2-technology.pdf">Cohort II Techology Crosswalk Datatables (PDF 7KB)</a></p>
 
-<h3>Info TK</h3>
 
-
-</div> <!-- End Accordion Container -->
-
+<!-- <table class="table table-header-rotated">
+          <thead>
+            <tr>
+                <th>Organization</th>
+                <th class="rotate"><div><span>Client Portal</span></div></th>
+                <th class="rotate"><div><span>Computers (Stations)</span></div></th>
+                <th class="rotate"><div><span>EHR</span></div></th>
+                <th class="rotate"><div><span>Email</span></div></th>
+                <th class="rotate"><div><span>(Smart)Phone</span></div></th>
+                <th class="rotate"><div><span>Mobile Applications</span></div></th>
+                <th class="rotate"><div><span>Social Media</span></div></th>
+                <th class="rotate"><div><span>Tablets</span></div></th>
+                <th class="rotate"><div><span>Texting</span></div></th>
+                <th class="rotate"><div><span>Video Conferencing</span></div></th>
+                <th class="rotate"><div><span>VR Platform</span></div></th>
+                <th class="rotate"><div><span>Website</span></div></th>
+                <th class="rotate"><div><span>Other</span></div></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="table--row-header">Central Oklahoma Family Medical Center, Inc.</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">Clinical and Support Options, Inc.</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">First Call Alcohol/Drug Prevention and Recovery, Inc.</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">Human Service Center</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">River Edge Behavioral Health Center</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">Spectrum Programs, Inc.</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">University of Kansas Center for Telemedicine and Telehealth (KUCTT)</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">WestCare Nevada</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="table--row-header">Total</td>
+                <td>7</td>
+                <td>4</td>
+                <td>4</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>5</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+ -->
 
 
 <!-- Accordion Element for New

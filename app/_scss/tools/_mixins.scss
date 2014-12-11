@@ -296,3 +296,38 @@ $prefix-for-spec:      true !default;
   #{$property}: -webkit-calc(#{$expression});
   #{$property}: calc(#{$expression});
 }
+
+@mixin alternating-rows-and-columns-custom($even-row-color, $odd-row-color, $dark-intersection, $header-color: white, $footer-color: white) {
+  th {
+    background-color: $header-color;
+    &.even, &:nth-child(2n) {
+      background-color: (tint($header-color, 30%));
+    }
+  }
+  tr {
+    &.odd, &:nth-child(2n+1) {
+      td {
+        background-color: $odd-row-color;
+        &.even, &:nth-child(2n) {
+          background-color: (tint($odd-row-color, 30%));
+        }
+      }
+    }
+  }
+  tr {
+    td {
+      background-color: $even-row-color;
+      &.even, &:nth-child(2n) {
+        background-color: (tint($even-row-color, 30%));
+      }
+    }
+  }
+  tfoot {
+    th, td {
+      background-color: $footer-color;
+      &.even, &:nth-child(2n) {
+        background-color: (tint($footer-color, 30%));
+      }
+    }
+  }
+}
