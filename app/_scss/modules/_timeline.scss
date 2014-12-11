@@ -110,3 +110,8 @@
 		cursor: pointer;
 	}
 }
+
+// Code to fix overflow above specific listing
+li#ca.tooltip.tooltipstered {
+	margin-top: 4em;
+}
