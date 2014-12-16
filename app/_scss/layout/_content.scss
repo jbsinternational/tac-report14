@@ -1,0 +1,30 @@
+.content-content {
+	@extend .content;
+	> div {
+		float: left;
+		@include box-sizing(border-box);
+	}
+	&-left {
+		width: 60%;
+		padding-right: 25px;
+	}
+	&-right {
+		width: 40%;
+	}
+	.accordion-content {
+		ul {
+			padding-left: 25px;
+			margin-top: 0px;
+		}
+		li {
+			margin-bottom: 5px;
+			color: #f00;
+			text-decoration: underline;
+		}
+		p + ul {
+			margin-top: 10px;
+		}
+	}
+}
+
+

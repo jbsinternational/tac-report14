@@ -46,6 +46,10 @@
 .grantee-moreData {
 	clear: both;
 	margin-top: 0.5em;
-	text-align: center;
+	text-align: right;
 	line-height: 2;
+}
+
+.grantee-moreData h3 {
+	color: rgba(125,125,125,1);
 }
