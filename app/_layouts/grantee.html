@@ -27,6 +27,20 @@ layout: default
         Grantee Application (PDF {{ page.application-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
     {% if page.biannual-size != null %}<a href="biannual/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Biannual Report (PDF {{ page.biannual-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    <div class="grantee-supplementalData">
+    {% if page.biannualattachment1-size != null %}<a href="biannualattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 1 (PDF {{ page.biannualattachment1-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    {% if page.biannualattachment2-size != null %}<a href="biannualattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 2 (PDF {{ page.biannualattachment2-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    {% if page.biannualattachment3-size != null %}<a href="biannualattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> AAttachment 3 (PDF {{ page.biannualattachment3-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    {% if page.biannualattachment4-size != null %}<a href="biannualattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> AAttachment 4 (PDF {{ page.biannualattachment4-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    </div> <!-- End Supplemental Div -->
+    {% if page.biannualsummary-size != null %}<a href="biannualsummary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Biannual Report Summary (PDF {{ page.biannualsummary-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+
+
     {% if page.quarterly-size != null %}<a href="quarterly/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Quartely Report (PDF {{ page.quarterly-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
     {% if page.final-size != null %}<a href="final/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
