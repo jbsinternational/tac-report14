@@ -8,7 +8,7 @@ Bower (http://bower.io/)
 Grunt (http://gruntjs.com/installing-grunt) 
 
 #To set up enviroment
-run `npm clear cache`  
+run `npm cache clean`  
 run `npm install`  
 run `bundle install`  
 run `bower install`  
