@@ -4,214 +4,357 @@ parent: performance
 cohort: C3
 title: Technology Used
 ---
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-var data = google.visualization.arrayToDataTable([
-         ['Technology', 'Utilizations', { role: 'style' }],
-         ['Client Portal', 8, '#4b831f'],            
-         ['Computers (Stations)', 4, '#4b831f'],            
-         ['EHR', 11, '#4b831f'],            
-         ['Email', 3, '#4b831f'],            
-         ['(Smart)Phone', 8, '#4b831f'],            
-         ['Mobile Applications', 7, '#4b831f'],            
-         ['Social Media', 3, '#4b831f'],            
-         ['Tablets', 6, '#4b831f'],            
-         ['Texting', 2, '#4b831f'],            
-         ['Video Conferencing', 7, '#4b831f'],            
-         ['VR Platform', 1, '#4b831f'],            
-         ['Website', 5, '#4b831f'],            
-         ['Other', 2, '#4b831f'],            
+<script type="text/javascript">
+google.load("visualization", "1", {
+    packages: ["corechart"]
+});
+google.setOnLoadCallback(drawChart);
 
-      ]);
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Technology', 'Utilizations', {
+            role: 'style'
+        }],
+        ['Client Portal', 8, '#4b831f'],
+        ['Computers (Stations)', 4, '#4b831f'],
+        ['EHR', 11, '#4b831f'],
+        ['Email', 3, '#4b831f'],
+        ['(Smart)Phone', 8, '#4b831f'],
+        ['Mobile Applications', 7, '#4b831f'],
+        ['Social Media', 3, '#4b831f'],
+        ['Tablets', 6, '#4b831f'],
+        ['Texting', 2, '#4b831f'],
+        ['Video Conferencing', 7, '#4b831f'],
+        ['VR Platform', 1, '#4b831f'],
+        ['Website', 5, '#4b831f'],
+        ['Other', 2, '#4b831f'],
 
-        var options = {
-          // title: 'Company Performance',
-         hAxis: { ticks: [0,1,2,3,4,5,6,7,8,9,10,11,12], title: 'Number of Cohort III grantees who utilized specified technology'},
-         legend: 'none',
-         chartArea: {width: '64%', height: '83%'},
-        };
+    ]);
 
-        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+    var options = {
+        // title: 'Company Performance',
+        hAxis: {
+            ticks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            title: 'Number of Cohort III grantees who utilized specified technology'
+        },
+        legend: 'none',
+        fontName: 'Lato',
+        chartArea: {
+            width: '64%',
+            height: '83%'
+        },
+    };
 
-        chart.draw(data, options);
-      }
-    </script>
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
+}
+</script>
 <h2>{{ page.title }}</h2>
 
 <div id="chart_div" style="height: 450px; width: 870px;"></div>
-<p><a href="/cohortIII/pdf/C3-technology.pdf">Cohort III Techology Crosswalk Datatables (PDF 7KB)</a></p>
 
-<!-- <table class="table table-header-rotated">
-          <thead>
-            <tr>
-                <th>Organization</th>
-                <th class="rotate"><div><span>Client Portal</span></div></th>
-                <th class="rotate"><div><span>Computers (Stations)</span></div></th>
-                <th class="rotate"><div><span>EHR</span></div></th>
-                <th class="rotate"><div><span>Email</span></div></th>
-                <th class="rotate"><div><span>(Smart)Phone</span></div></th>
-                <th class="rotate"><div><span>Mobile Applications</span></div></th>
-                <th class="rotate"><div><span>Social Media</span></div></th>
-                <th class="rotate"><div><span>Tablets</span></div></th>
-                <th class="rotate"><div><span>Texting</span></div></th>
-                <th class="rotate"><div><span>Video Conferencing</span></div></th>
-                <th class="rotate"><div><span>VR Platform</span></div></th>
-                <th class="rotate"><div><span>Website</span></div></th>
-                <th class="rotate"><div><span>Other</span></div></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-                <td class="table--row-header">Central Oklahoma Family Medical Center, Inc.</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">Clinical and Support Options, Inc.</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">First Call Alcohol/Drug Prevention and Recovery, Inc.</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">Human Service Center</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">River Edge Behavioral Health Center</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">Spectrum Programs, Inc.</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">University of Kansas Center for Telemedicine and Telehealth (KUCTT)</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">WestCare Nevada</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td class="table--row-header">Total</td>
-                <td>7</td>
-                <td>4</td>
-                <td>4</td>
-                <td>2</td>
-                <td>3</td>
-                <td>2</td>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-                <td>5</td>
-                <td>0</td>
-                <td>3</td>
-                <td>0</td>
-            </tr>
-          </tbody>
-        </table>
- -->
+<table class="table table--tech-used">
+    <thead>
+        <tr>
+            <th class="table--row-header">Organization</th>
+            <th class="rotate">
+                <div>
+                    <span>Client Portal</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Computers (Stations)</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>EHR</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Email</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>(Smart)Phone</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Mobile Applications</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Social Media</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Tablets</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Texting</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Video Conferencing</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>VR Platform</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Website</span>
+                </div>
+            </th>
+            <th class="rotate">
+                <div>
+                    <span>Other</span>
+                </div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="table--row-header">Boston University<span class="table--note tooltip" id="MA"></span></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">The Centers, Inc.<span class="table--note tooltip" id="FL-OC"></span></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Centerstone of Tennessee<span class="table--note tooltip" id="TN"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Community Health Center, Inc.<span class="table--note tooltip" id="CT"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">East Carolina University<span class="table--note tooltip" id="NC"></span></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Fountain House<span class="table--note tooltip" id="NY"></span></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Heartview Foundation<span class="table--note tooltip" id="ND"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Meta House<span class="table--note tooltip" id="WI"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Native American Health<br>Center, Inc.<span class="table--note tooltip" id="CA"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Operation PAR<span class="table--note tooltip" id="FL"></span></td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Prestera Center for Mental Health&nbsp;Services<span class="table--note tooltip" id="WV"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">Randolph County Caring Community Partnership<span class="table--note tooltip" id="MO"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="table--row-header">San Antonio Council on Alcohol and&nbsp;Drug&nbsp;Abuse<span class="table--note tooltip" id="TX"></span></td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="table--cell--selected">&#8226;</td>
+            <td>&nbsp;</td>
+        </tr>
+            <tr class="table--row-total">
+            <td class="table--row-header tooltip">Total</td>
+            <td>8</td>
+            <td>4</td>
+            <td>11</td>
+            <td>3</td>
+            <td>8</td>
+            <td>7</td>
+            <td>3</td>
+            <td>6</td>
+            <td>2</td>
+            <td>7</td>
+            <td>1</td>
+            <td>5</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
 
-
+<p><a href="/cohortIII/pdf/C3-technology.pdf">Cohort III Techology Crosswalk Datatables (PDF 7KB)</a>
+</p>
 <!-- Accordion Element for New
     <h3 class="accordion-header">Header Here</h3>
     <div class="accordion-content">
