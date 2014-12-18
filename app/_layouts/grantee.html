@@ -45,6 +45,16 @@ layout: default
         Quartely Report (PDF {{ page.quarterly-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
     {% if page.final-size != null %}<a href="final/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Final Report (PDF {{ page.final-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    <div class="grantee-supplementalData">
+    {% if page.finalattachment1-size != null %}<a href="finalattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 1 (PDF {{ page.finalattachment1-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    {% if page.finalattachment2-size != null %}<a href="finalattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 2 (PDF {{ page.finalattachment2-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    {% if page.finalattachment3-size != null %}<a href="finalattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 3 (PDF {{ page.finalattachment3-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    {% if page.finalattachment4-size != null %}<a href="finalattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 4 (PDF {{ page.finalattachment4-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
+    </div> <!-- End Supplemental Div -->        
     {% if page.call-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Call Summary (PDF {{ page.call-size }}) <img src="/img/pdf_icon.png"></a><br/>{% endif %}
 	{% if page.ta-size != null %}<a href="ta/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
