@@ -1,0 +1,43 @@
+.activities {
+	&--column {
+		width:50%;
+		padding-right: 2em;
+		float: left;
+		margin:2em 0;
+		@include box-sizing(border-box);
+		h3 {
+			// text-align: center;
+		}
+	}
+	div:nth-of-type(odd) {
+			clear: left;
+		}
+	&--icon {
+		background-repeat: no-repeat;
+		width: 130px;
+		height: 130px;
+		background-size: 100% auto;
+		margin-right: 2em;
+		float: left;
+		&--assist {
+			background-image:url(/img/aag-assist.png);
+		}
+		&--IEspot {
+			background-image:url(/img/aag-IEspot.png);
+		}
+		&--webinar {
+			background-image:url(/img/aag-webinar.png);
+		}
+		&--visit {
+			background-image:url(/img/aag-visit.png);
+		}		
+	}
+	&--list {
+		list-style: none;
+		padding-left:0;
+		overflow: hidden;
+		li {
+			margin-bottom:.5em;
+		}
+	}
+}
