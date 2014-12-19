@@ -12,22 +12,20 @@ google.setOnLoadCallback(drawChart);
 
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['Technology', 'Utilizations', {
-            role: 'style'
-        }],
-        ['Client Portal', 8, '#4b831f'],
-        ['Computers (Stations)', 4, '#4b831f'],
-        ['EHR', 11, '#4b831f'],
-        ['Email', 3, '#4b831f'],
-        ['(Smart)Phone', 8, '#4b831f'],
-        ['Mobile Applications', 7, '#4b831f'],
-        ['Social Media', 3, '#4b831f'],
-        ['Tablets', 6, '#4b831f'],
-        ['Texting', 2, '#4b831f'],
-        ['Video Conferencing', 7, '#4b831f'],
-        ['VR Platform', 1, '#4b831f'],
-        ['Website', 5, '#4b831f'],
-        ['Other', 2, '#4b831f'],
+        ['Technology', 'Utilizations'],
+        ['Client Portal', 8],
+        ['Computers (Stations)', 4],
+        ['EHR', 11],
+        ['Email', 3],
+        ['(Smart)Phone', 8],
+        ['Mobile Applications', 7],
+        ['Social Media', 3],
+        ['Tablets', 6],
+        ['Texting', 2],
+        ['Video Conferencing', 7],
+        ['Virtual Reality', 1],
+        ['Website', 5],
+        ['Other', 2],
 
     ]);
 
@@ -43,6 +41,7 @@ function drawChart() {
             width: '64%',
             height: '83%'
         },
+         colors: ['#4b831f']        
     };
 
     var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
@@ -110,7 +109,7 @@ function drawChart() {
             </th>
             <th class="rotate">
                 <div>
-                    <span>VR Platform</span>
+                    <span>Virtual Reality</span>
                 </div>
             </th>
             <th class="rotate">
@@ -127,7 +126,7 @@ function drawChart() {
     </thead>
     <tbody>
         <tr>
-            <td class="table--row-header">Boston University<span class="table--note tooltip" id="MA"></span></td>
+            <td class="table--row-header">Boston University<span class="icon--note tooltip" id="MA"></span></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -143,7 +142,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">The Centers, Inc.<span class="table--note tooltip" id="FL-OC"></span></td>
+            <td class="table--row-header">The Centers, Inc.<span class="icon--note tooltip" id="FL-OC"></span></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -159,7 +158,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Centerstone of Tennessee<span class="table--note tooltip" id="TN"></span></td>
+            <td class="table--row-header">Centerstone of Tennessee<span class="icon--note tooltip" id="TN"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -175,7 +174,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Community Health Center, Inc.<span class="table--note tooltip" id="CT"></span></td>
+            <td class="table--row-header">Community Health Center, Inc.<span class="icon--note tooltip" id="CT"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -191,7 +190,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">East Carolina University<span class="table--note tooltip" id="NC"></span></td>
+            <td class="table--row-header">East Carolina University<span class="icon--note tooltip" id="NC"></span></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -207,7 +206,7 @@ function drawChart() {
             <td class="table--cell--selected">&#8226;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Fountain House<span class="table--note tooltip" id="NY"></span></td>
+            <td class="table--row-header">Fountain House<span class="icon--note tooltip" id="NY"></span></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -223,7 +222,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Heartview Foundation<span class="table--note tooltip" id="ND"></span></td>
+            <td class="table--row-header">Heartview Foundation<span class="icon--note tooltip" id="ND"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -239,7 +238,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Meta House<span class="table--note tooltip" id="WI"></span></td>
+            <td class="table--row-header">Meta House<span class="icon--note tooltip" id="WI"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -255,7 +254,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Native American Health<br>Center, Inc.<span class="table--note tooltip" id="CA"></span></td>
+            <td class="table--row-header">Native American Health<br>Center, Inc.<span class="icon--note tooltip" id="CA"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -271,7 +270,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Operation PAR<span class="table--note tooltip" id="FL"></span></td>
+            <td class="table--row-header">Operation PAR<span class="icon--note tooltip" id="FL"></span></td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -287,7 +286,7 @@ function drawChart() {
             <td class="table--cell--selected">&#8226;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Prestera Center for Mental Health&nbsp;Services<span class="table--note tooltip" id="WV"></span></td>
+            <td class="table--row-header">Prestera Center for Mental Health&nbsp;Services<span class="icon--note tooltip" id="WV"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -303,7 +302,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Randolph County Caring Community Partnership<span class="table--note tooltip" id="MO"></span></td>
+            <td class="table--row-header">Randolph County Caring Community Partnership<span class="icon--note tooltip" id="MO"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -319,7 +318,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">San Antonio Council on Alcohol and&nbsp;Drug&nbsp;Abuse<span class="table--note tooltip" id="TX"></span></td>
+            <td class="table--row-header">San Antonio Council on Alcohol and&nbsp;Drug&nbsp;Abuse<span class="icon--note tooltip" id="TX"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -353,7 +352,7 @@ function drawChart() {
     </tbody>
 </table>
 
-<p><a href="/cohortIII/pdf/C3-technology.pdf">Cohort III Techology Crosswalk Datatables <span class="file--metadata">(PDF 7KB) <img src="/img/pdf_icon.png"></span></a>
+<p><a href="/cohortIII/pdf/C3-technology.pdf">Cohort III Techology Crosswalk Datatables <span class="file--metadata">(PDF 7KB) <span class="icon--file-pdf"></span></span></a>
 </p>
 <!-- Accordion Element for New
     <h3 class="accordion-header">Header Here</h3>

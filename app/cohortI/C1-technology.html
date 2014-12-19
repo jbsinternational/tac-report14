@@ -9,21 +9,20 @@ title: Technology Used
       google.setOnLoadCallback(drawChart);
       function drawChart() {
 var data = google.visualization.arrayToDataTable([
-         ['Technology', 'Utilizations', { role: 'style' }],
-         ['Client Portal', 7, '#46a3d2'],            
-         ['Computers (Stations)', 4, '#46a3d2'],            
-         ['EHR', 4, '#46a3d2'],            
-         ['Email', 2, '#46a3d2'],            
-         ['(Smart)Phone', 3, '#46a3d2'],            
-         ['Mobile Applications', 2, '#46a3d2'],            
-         ['Social Media', 3, '#46a3d2'],            
-         ['Tablets', 3, '#46a3d2'],            
-         ['Texting', 3, '#46a3d2'],            
-         ['Video Conferencing', 5, '#46a3d2'],            
-         ['Virtual Reality', 0, '#46a3d2'],            
-         ['Website', 3, '#46a3d2'],            
-         ['Other', 0, '#46a3d2'],            
-
+         ['Technology', 'Utilizations'],
+         ['Client Portal', 7],            
+         ['Computers (Stations)', 4],            
+         ['EHR', 4],            
+         ['Email', 2],            
+         ['(Smart)Phone', 3],            
+         ['Mobile Applications', 2],            
+         ['Social Media', 3],            
+         ['Tablets', 3],            
+         ['Texting', 3],            
+         ['Video Conferencing', 5],            
+         ['Virtual Reality', 0],            
+         ['Website', 3],            
+         ['Other', 0],            
       ]);
 
         var options = {
@@ -32,6 +31,7 @@ var data = google.visualization.arrayToDataTable([
          legend: 'none',
          chartArea: {width: '68%', height: '83%'},
          fontName: 'Lato',
+         colors: ['#46a3d2']
         };
 
         var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
@@ -64,7 +64,7 @@ var data = google.visualization.arrayToDataTable([
           </thead>
           <tbody>
             <tr>
-                <td class="table--row-header">Central Oklahoma Family Medical Center, Inc.<span class="table--note tooltip" id="OK"></span></td>
+                <td class="table--row-header">Central Oklahoma Family Medical Center, Inc.<span class="icon--note tooltip" id="OK"></span></td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td>&nbsp;</td>
                 <td class="table--cell--selected">&#8226;</td>
@@ -80,7 +80,7 @@ var data = google.visualization.arrayToDataTable([
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="table--row-header">Clinical and Support Options, Inc.<span class="table--note tooltip" id="MA"></span></td>
+                <td class="table--row-header">Clinical and Support Options, Inc.<span class="icon--note tooltip" id="MA"></span></td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td>&nbsp;</td>
                 <td class="table--cell--selected">&#8226;</td>
@@ -96,7 +96,7 @@ var data = google.visualization.arrayToDataTable([
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="table--row-header">First Call Alcohol/Drug Prevention and Recovery, Inc.<span class="table--note tooltip" id="MO"></span></td>
+                <td class="table--row-header">First Call Alcohol/Drug Prevention and Recovery, Inc.<span class="icon--note tooltip" id="MO"></span></td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td class="table--cell--selected">&#8226;</td>
@@ -112,7 +112,7 @@ var data = google.visualization.arrayToDataTable([
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="table--row-header">Human Service Center<span class="table--note tooltip" id="IL"></span></td>
+                <td class="table--row-header">Human Service Center<span class="icon--note tooltip" id="IL"></span></td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td>&nbsp;</td>
                 <td class="table--cell--selected">&#8226;</td>
@@ -128,7 +128,7 @@ var data = google.visualization.arrayToDataTable([
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="table--row-header">River Edge Behavioral Health Center<span class="table--note tooltip" id="GA"></span></td>
+                <td class="table--row-header">River Edge Behavioral Health Center<span class="icon--note tooltip" id="GA"></span></td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td>&nbsp;</td>
@@ -144,7 +144,7 @@ var data = google.visualization.arrayToDataTable([
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="table--row-header">Spectrum Programs, Inc.<span class="table--note tooltip" id="FL"></span></td>
+                <td class="table--row-header">Spectrum Programs, Inc.<span class="icon--note tooltip" id="FL"></span></td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td>&nbsp;</td>
@@ -160,7 +160,7 @@ var data = google.visualization.arrayToDataTable([
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="table--row-header tooltip">University of Kansas Center for Telemedicine and Telehealth (KUCTT)<span class="table--note tooltip" id="KS"></span></td>
+                <td class="table--row-header tooltip">University of Kansas Center for Telemedicine and Telehealth (KUCTT)<span class="icon--note tooltip" id="KS"></span></td>
                 <td>&nbsp;</td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td>&nbsp;</td>
@@ -176,7 +176,7 @@ var data = google.visualization.arrayToDataTable([
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="table--row-header">WestCare Nevada<span class="table--note tooltip" id="NV"></span></td>
+                <td class="table--row-header">WestCare Nevada<span class="icon--note tooltip" id="NV"></span></td>
                 <td class="table--cell--selected">&#8226;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -209,7 +209,7 @@ var data = google.visualization.arrayToDataTable([
             </tr>
           </tbody>
         </table>
-<p><a href="/cohortI/pdf/C1-technology.pdf">Cohort I Techology Crosswalk Datatables <span class="file--metadata">(PDF 48KB) <img src="/img/pdf_icon.png"></span></a></p>
+<p><a href="/cohortI/pdf/C1-technology.pdf">Cohort I Techology Crosswalk Datatables <span class="file--metadata">(PDF 48KB) <span class="icon--file-pdf"></span></span></a></p>
 
 
 <!-- Accordion Element for New

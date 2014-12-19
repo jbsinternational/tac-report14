@@ -12,22 +12,20 @@ google.setOnLoadCallback(drawChart);
 
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['Technology', 'Utilizations', {
-            role: 'style'
-        }],
-        ['Client Portal', 3, '#f89728'],
-        ['Computers (Stations)', 1, '#f89728'],
-        ['EHR', 3, '#f89728'],
-        ['Email', 0, '#f89728'],
-        ['(Smart)Phone', 4, '#f89728'],
-        ['Mobile Applications', 3, '#f89728'],
-        ['Social Media', 0, '#f89728'],
-        ['Tablets', 3, '#f89728'],
-        ['Texting', 3, '#f89728'],
-        ['Video Conferencing', 4, '#f89728'],
-        ['VR Platform', 0, '#f89728'],
-        ['Website', 3, '#f89728'],
-        ['Other', 1, '#f89728'],
+        ['Technology', 'Utilizations'],
+        ['Client Portal', 3],
+        ['Computers (Stations)', 1],
+        ['EHR', 3],
+        ['Email', 0],
+        ['(Smart)Phone', 4],
+        ['Mobile Applications', 3],
+        ['Social Media', 0],
+        ['Tablets', 3],
+        ['Texting', 3],
+        ['Video Conferencing', 4],
+        ['Virtual Reality', 0],
+        ['Website', 3],
+        ['Other', 1],
 
     ]);
 
@@ -43,6 +41,7 @@ function drawChart() {
             width: '68%',
             height: '83%'
         },
+        colors: ['#f89728']
     };
 
     var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
@@ -129,7 +128,7 @@ function drawChart() {
     </thead>
     <tbody>
         <tr>
-            <td class="table--row-header">Buffalo Valley, Inc.<span class="table--note tooltip" id="TN"></span></td>
+            <td class="table--row-header">Buffalo Valley, Inc.<span class="icon--note tooltip" id="TN"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -145,7 +144,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">First Choice Services, Inc.<span class="table--note tooltip" id="WV"></span></td>
+            <td class="table--row-header">First Choice Services, Inc.<span class="icon--note tooltip" id="WV"></span></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -161,7 +160,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Forest County Potawatomi Health and Wellness Center<span class="table--note tooltip" id="IA"></span></td>
+            <td class="table--row-header">Forest County Potawatomi Health and Wellness Center<span class="icon--note tooltip" id="IA"></span></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -177,7 +176,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Iowa Department of Public<br>Health<span class="table--note tooltip" id="PA"></span></td>
+            <td class="table--row-header">Iowa Department of Public<br>Health<span class="icon--note tooltip" id="PA"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -193,7 +192,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Irene Stacy Community Mental&nbsp;Health Center<span class="table--note tooltip" id="WI"></span></td>
+            <td class="table--row-header">Irene Stacy Community Mental&nbsp;Health Center<span class="icon--note tooltip" id="WI"></span></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -209,7 +208,7 @@ function drawChart() {
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="table--row-header">Promesa Behavioral Health<span class="table--note tooltip" id="CA"></span></td>
+            <td class="table--row-header">Promesa Behavioral Health<span class="icon--note tooltip" id="CA"></span></td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
             <td class="table--cell--selected">&#8226;</td>
@@ -242,5 +241,5 @@ function drawChart() {
         </tr>
     </tbody>
 </table>
-<p><a href="/cohortII/pdf/C2-technology.pdf">Cohort II Techology Crosswalk Datatables <span class="file--metadata">(PDF 7KB) <img src="/img/pdf_icon.png"></span></a>
+<p><a href="/cohortII/pdf/C2-technology.pdf">Cohort II Techology Crosswalk Datatables <span class="file--metadata">(PDF 7KB) <span class="icon--file-pdf"></span></span></a>
 </p>
