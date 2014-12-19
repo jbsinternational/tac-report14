@@ -6,35 +6,60 @@
 
 @import "compass/utilities/sprites";
 
-$sprites: sprite-map("icons/*.png");
-$sprites2x: sprite-map("icons-2x/*.png");
+// $sprites: sprite-map("icons/*.png");
+// $sprites2x: sprite-map("icons-2x/*.png");
 
-[class^="icon-"],
-[class*=" icon-"] {
-  background-repeat: no-repeat;
-  display: inline-block;
-  background-image: sprite-url($sprites);
+// [class^="icon-"],
+// [class*=" icon-"] {
+//   background-repeat: no-repeat;
+//   display: inline-block;
+//   background-image: sprite-url($sprites);
 
-  @media (-webkit-min-device-pixel-ratio: 1.5),
-         (-o-min-device-pixel-ratio: 3/2),
-         (min-device-pixel-ratio: 1.5) {
-    background-image: sprite-url($sprites2x);
-    background-size: ceil(image-width(sprite-path($sprites2x)) / 2) auto;
-  }
-}
+//   @media (-webkit-min-device-pixel-ratio: 1.5),
+//          (-o-min-device-pixel-ratio: 3/2),
+//          (min-device-pixel-ratio: 1.5) {
+//     background-image: sprite-url($sprites2x);
+//     background-size: ceil(image-width(sprite-path($sprites2x)) / 2) auto;
+//   }
+// }
 
-@mixin sprite-background($name) {
-  background-position: sprite-position($sprites, $name);
-  height: image-height(sprite-file($sprites, $name));
-  width: image-width(sprite-file($sprites, $name));
+// @mixin sprite-background($name) {
+//   background-position: sprite-position($sprites, $name);
+//   height: image-height(sprite-file($sprites, $name));
+//   width: image-width(sprite-file($sprites, $name));
 
-  @media (-webkit-min-device-pixel-ratio: 1.5),
-         (-o-min-device-pixel-ratio: 3/2),
-         (min-device-pixel-ratio: 1.5) {
-    background-position: 0 round(nth(sprite-position($sprites2x, $name), 2) / 2);
-  }
-}
+//   @media (-webkit-min-device-pixel-ratio: 1.5),
+//          (-o-min-device-pixel-ratio: 3/2),
+//          (min-device-pixel-ratio: 1.5) {
+//     background-position: 0 round(nth(sprite-position($sprites2x, $name), 2) / 2);
+//   }
+// }
 
 .icon-facebook {
   //@include sprite-background(facebook);
 }
+.icon { 
+       height: 15px;
+        width: 12px;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-bottom: -2px;
+    }
+      .icon--note {
+        @extend .icon;
+        margin-left: 7px;
+        background-image: url(/img/note_icon.png);
+
+        .svg & {
+          background-image: url(/img/note_icon.svg);
+        }
+      }
+      .icon--file-pdf {
+        @extend .icon;
+        background-image: url(/img/pdf_icon.png);
+
+        .svg & {
+          background-image: url(/img/pdf_icon.svg);
+        }
+      }
