@@ -74,6 +74,11 @@ layout: default
         Call Summary (PDF {{ page.call-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
 	{% if page.ta-size != null %}<a href="ta/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         TA Summary Report (PDF {{ page.ta-size }})</a><br/>{% endif %}
+
+    {% if page.webinar-size != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-webinar.pdf" target="_blank">
+        Biweekly Grantee Call Webinar Presentation (PDF {{ page.final-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.spotlight-size != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-IEspot.pdf" target="_blank">
+        Ideas Exchange Spotlight (PDF {{ page.final-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
 </div>
 
 
