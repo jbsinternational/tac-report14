@@ -27,7 +27,7 @@ Checks code quality with Jshint and CSS Lint, and Jekyll health with `jekyll doc
 
 Builds an optimized site to the dist directory. [Usemin blocks](https://github.com/yeoman/grunt-usemin#the-useminprepare-task) are concatenated, [CSS](https://github.com/gruntjs/grunt-contrib-cssmin), [images](https://github.com/gruntjs/grunt-contrib-imagemin), and [HTML](https://github.com/gruntjs/grunt-contrib-htmlmin) are minified, [JavaScript is uglified](https://github.com/gruntjs/grunt-contrib-uglify), and assets are [revved](https://github.com/yeoman/grunt-filerev) for cache busting.
 
-`grunt serve:dist` will run `grunt build` and open the result in your default browser
+`grunt serve:dist` will run `grunt build` and open the result in your default browser. Huzzah!
 
 #### grunt deploy
 
