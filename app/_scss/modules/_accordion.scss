@@ -77,6 +77,20 @@
     margin-bottom: 10px;
 }
 
-.accordion-content p {
+/*.accordion-content p {
     margin: 0 0 5px 0;
-}
+}*/
+
+
+    .accordion-content {
+        ul {
+            padding-left: 25px;
+            margin-top: 0px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        p + ul {
+            margin-top: 10px;
+        }
+    }
