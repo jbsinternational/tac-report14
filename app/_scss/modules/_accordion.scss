@@ -71,26 +71,18 @@
     padding: 20px 20px 30px 20px;
     position: relative;
     top: -10px;
+    ul {
+        padding-left: 25px;
+        margin-top: 0px;
+        }
+    li {
+        margin-bottom: 5px;
+        }
+    p + ul {
+        margin-top: 10px;
+        }
 }
 
 .accordion-header, .accordion-content {
     margin-bottom: 10px;
 }
-
-/*.accordion-content p {
-    margin: 0 0 5px 0;
-}*/
-
-
-    .accordion-content {
-        ul {
-            padding-left: 25px;
-            margin-top: 0px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        p + ul {
-            margin-top: 10px;
-        }
-    }
