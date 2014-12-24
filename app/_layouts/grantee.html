@@ -76,12 +76,15 @@ layout: default
         TA Summary Report (PDF {{ page.ta-size }})</a><br/>{% endif %}
 
     {% if page.webinar-size != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-webinar.pdf" target="_blank">
-        Biweekly Grantee Call Webinar Presentation (PDF {{ page.final-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+        Biweekly Grantee Call Webinar Presentation (PDF {{ page.webinar-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
     {% if page.spotlight-size != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-IEspot.pdf" target="_blank">
-        Ideas Exchange Spotlight (PDF {{ page.final-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+        Ideas Exchange Spotlight (PDF {{ page.spotlight-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+
+    {% if page.taassist1-size && page.taassist1-number != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-assist-{{ page.taassist1-number }}.pdf" target="_blank">
+        Technical Assistance {{ page.taassist1-number }} Summary (PDF {{ page.taassist1-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.taassist2-size && page.taassist2-number != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-assist-{{ page.taassist2-number }}.pdf" target="_blank">
+        Technical Assistance {{ page.taassist2-number }} Summary (PDF {{ page.taassist2-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
 </div>
-
-
 
 		</div>
 </div>
