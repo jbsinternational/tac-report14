@@ -41,7 +41,7 @@ layout: default
         Biannual Report Summary (PDF {{ page.biannualsummary-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
 
 
-    {% if page.quarterly-size != null %}<a href="quarterlyattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+    {% if page.quarterly-size != null %}<a href="quarterly/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Quarterly Report (PDF {{ page.quarterly-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
     {% if page.quarterlyattachment1-size != null %}<a href="quarterlyattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
        <img src="/img/arrow_icon.png"> Attachment 1 (PDF {{ page.quarterlyattachment1-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
