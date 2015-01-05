@@ -72,7 +72,9 @@ layout: default
     </div> <!-- End Supplemental Div -->        
     {% if page.call-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Call Summary (PDF {{ page.call-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-
+    <!-- Call Summary Area Below -->
+     {% if page.callsummary01-size != null %} Call Summaries><br/>{% endif %}
+    <div class="grantee-supplementalData">
     {% if page.callsummary01-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary01-date }}.pdf" target="_blank">
         <img src="/img/arrow_icon.png">Call Summary {{ page.callsummary01-date }} (PDF {{ page.callsummary01-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
     
@@ -102,7 +104,7 @@ layout: default
 
     {% if page.callsummary10-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary10-date }}.pdf" target="_blank">
         <img src="/img/arrow_icon.png">Call Summary {{ page.callsummary10-date }} (PDF {{ page.callsummary10-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-
+    </div> <!-- End Supplemental Data div -->
     
 
 	{% if page.ta-size != null %}<a href="ta/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
