@@ -43,6 +43,7 @@ layout: default
 
     {% if page.quarterly-size != null %}<a href="quarterly/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Quarterly Report (PDF {{ page.quarterly-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    <div class="grantee-supplementalData">
     {% if page.quarterlyattachment1-size != null %}<a href="quarterlyattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
        <img src="/img/arrow_icon.png"> Attachment 1 (PDF {{ page.quarterlyattachment1-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
     {% if page.quarterlyattachment2-size != null %}<a href="quarterlyattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
@@ -53,6 +54,7 @@ layout: default
        <img src="/img/arrow_icon.png"> Attachment 4 (PDF {{ page.quarterlyattachment4-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
     {% if page.quarterlyattachment5-size != null %}<a href="quarterlyattachment5/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
        <img src="/img/arrow_icon.png"> Attachment 5 (PDF {{ page.quarterlyattachment5-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    </div> <!-- End Supplemental Div -->
     {% if page.quarterlysummary-size != null %}<a href="quarterlysummary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
         Quarterly Report Summary (PDF {{ page.quarterlysummary-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
 
