@@ -16,114 +16,116 @@ layout: default
 <!-- Removed
 <div class="grantee-pdf">
     <a href="pdf/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/{{ page.cohort }}-{{ page.grantee }}-pdf.jpg" alt="PDF of {{ grantee_name }}'s Site Visit Report">Site Report (PDF {{ page.pdf-size }})</a>
+        <img src="/img/{{ page.cohort }}-{{ page.grantee }}-pdf.jpg" alt="PDF of {{ grantee_name }}'s Site Visit Report">Site Report <span class="nowrap">(PDF {{ page.pdf-size }})</a>
 </div> -->
 <!-- Additional Data -->
 <div class="grantee-moreData">
-    <h4>Support Documents</h4>
-    {% if page.pdf-size != null %}<a href="pdf/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Site Visit Report (PDF {{ page.pdf-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.application-size != null %}<a href="application/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Grantee Application (PDF {{ page.application-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.biannual-size != null %}<a href="biannual/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Biannual Report (PDF {{ page.biannual-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    <div class="label">Support Documents:</div>
+    <ul>
+    {% if page.pdf-size != null %}<li><a href="pdf/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Site Visit Report <span class="nowrap">(PDF {{ page.pdf-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.application-size != null %}<li><a href="application/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Grantee Application <span class="nowrap">(PDF {{ page.application-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.biannual-size != null %}<li><a href="biannual/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Biannual Report <span class="nowrap">(PDF {{ page.biannual-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
     <div class="grantee-supplementalData">
-    {% if page.biannualattachment1-size != null %}<a href="biannualattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 1 (PDF {{ page.biannualattachment1-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.biannualattachment2-size != null %}<a href="biannualattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 2 (PDF {{ page.biannualattachment2-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.biannualattachment3-size != null %}<a href="biannualattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 3 (PDF {{ page.biannualattachment3-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.biannualattachment4-size != null %}<a href="biannualattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 4 (PDF {{ page.biannualattachment4-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.biannualattachment1-size != null %}<li><a href="biannualattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 1 <span class="nowrap">(PDF {{ page.biannualattachment1-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.biannualattachment2-size != null %}<li><a href="biannualattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 2 <span class="nowrap">(PDF {{ page.biannualattachment2-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.biannualattachment3-size != null %}<li><a href="biannualattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 3 <span class="nowrap">(PDF {{ page.biannualattachment3-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.biannualattachment4-size != null %}<li><a href="biannualattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 4 <span class="nowrap">(PDF {{ page.biannualattachment4-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
     </div> <!-- End Supplemental Div -->
-    {% if page.biannualsummary-size != null %}<a href="biannualsummary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Biannual Report Summary (PDF {{ page.biannualsummary-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.biannualsummary-size != null %}<li><a href="biannualsummary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Biannual Report Summary <span class="nowrap">(PDF {{ page.biannualsummary-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
 
-    {% if page.quarterly-size != null %}<a href="quarterly/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Quarterly Report (PDF {{ page.quarterly-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.quarterly-size != null %}<li><a href="quarterly/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Quarterly Report <span class="nowrap">(PDF {{ page.quarterly-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
     <div class="grantee-supplementalData">
-    {% if page.quarterlyattachment1-size != null %}<a href="quarterlyattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-       <img src="/img/arrow_icon.png"> Attachment 1 (PDF {{ page.quarterlyattachment1-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.quarterlyattachment2-size != null %}<a href="quarterlyattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-       <img src="/img/arrow_icon.png"> Attachment 2 (PDF {{ page.quarterlyattachment2-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.quarterlyattachment3-size != null %}<a href="quarterlyattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-       <img src="/img/arrow_icon.png"> Attachment 3 (PDF {{ page.quarterlyattachment3-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.quarterlyattachment4-size != null %}<a href="quarterlyattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-       <img src="/img/arrow_icon.png"> Attachment 4 (PDF {{ page.quarterlyattachment4-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.quarterlyattachment5-size != null %}<a href="quarterlyattachment5/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-       <img src="/img/arrow_icon.png"> Attachment 5 (PDF {{ page.quarterlyattachment5-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.quarterlyattachment1-size != null %}<li><a href="quarterlyattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+       <img src="/img/arrow_icon.png"> Attachment 1 <span class="nowrap">(PDF {{ page.quarterlyattachment1-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.quarterlyattachment2-size != null %}<li><a href="quarterlyattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+       <img src="/img/arrow_icon.png"> Attachment 2 <span class="nowrap">(PDF {{ page.quarterlyattachment2-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.quarterlyattachment3-size != null %}<li><a href="quarterlyattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+       <img src="/img/arrow_icon.png"> Attachment 3 <span class="nowrap">(PDF {{ page.quarterlyattachment3-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.quarterlyattachment4-size != null %}<li><a href="quarterlyattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+       <img src="/img/arrow_icon.png"> Attachment 4 <span class="nowrap">(PDF {{ page.quarterlyattachment4-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.quarterlyattachment5-size != null %}<li><a href="quarterlyattachment5/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+       <img src="/img/arrow_icon.png"> Attachment 5 <span class="nowrap">(PDF {{ page.quarterlyattachment5-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
     </div> <!-- End Supplemental Div -->
-    {% if page.quarterlysummary-size != null %}<a href="quarterlysummary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Quarterly Report Summary (PDF {{ page.quarterlysummary-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.quarterlysummary-size != null %}<li><a href="quarterlysummary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Quarterly Report Summary <span class="nowrap">(PDF {{ page.quarterlysummary-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
 
 
-    {% if page.final-size != null %}<a href="final/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Final Report (PDF {{ page.final-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.final-size != null %}<li><a href="final/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Final Report <span class="nowrap">(PDF {{ page.final-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
     <div class="grantee-supplementalData">
-    {% if page.finalattachment1-size != null %}<a href="finalattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 1 (PDF {{ page.finalattachment1-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.finalattachment2-size != null %}<a href="finalattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 2 (PDF {{ page.finalattachment2-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.finalattachment3-size != null %}<a href="finalattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 3 (PDF {{ page.finalattachment3-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.finalattachment4-size != null %}<a href="finalattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Attachment 4 (PDF {{ page.finalattachment4-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.finalattachment1-size != null %}<li><a href="finalattachment1/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 1 <span class="nowrap">(PDF {{ page.finalattachment1-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.finalattachment2-size != null %}<li><a href="finalattachment2/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 2 <span class="nowrap">(PDF {{ page.finalattachment2-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.finalattachment3-size != null %}<li><a href="finalattachment3/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 3 <span class="nowrap">(PDF {{ page.finalattachment3-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.finalattachment4-size != null %}<li><a href="finalattachment4/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Attachment 4 <span class="nowrap">(PDF {{ page.finalattachment4-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
     </div> <!-- End Supplemental Div -->        
     
     
 
-	{% if page.ta-size != null %}<a href="ta/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        TA Summary Report (PDF {{ page.ta-size }})</a><br/>{% endif %}
+	{% if page.ta-size != null %}<li><a href="ta/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        TA Summary Report <span class="nowrap">(PDF {{ page.ta-size }})</a></li>{% endif %}
 
-    {% if page.webinar-size != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-webinar.pdf" target="_blank">
-        Biweekly Call Webinar Presentation (PDF {{ page.webinar-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.spotlight-size != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-IEspot.pdf" target="_blank">
-        Ideas Exchange Spotlight (PDF {{ page.spotlight-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.webinar-size != null %}<li><a href="activities/{{ page.cohort }}-{{ page.grantee }}-webinar.pdf" target="_blank">
+        Biweekly Call Webinar Presentation <span class="nowrap">(PDF {{ page.webinar-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.spotlight-size != null %}<li><a href="activities/{{ page.cohort }}-{{ page.grantee }}-IEspot.pdf" target="_blank">
+        Ideas Exchange Spotlight <span class="nowrap">(PDF {{ page.spotlight-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.taassist1-size && page.taassist1-number != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-assist-TA{{ page.taassist1-number }}.pdf" target="_blank">
-        Technical Assistance {{ page.taassist1-number }} Summary (PDF {{ page.taassist1-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    {% if page.taassist2-size && page.taassist2-number != null %}<a href="activities/{{ page.cohort }}-{{ page.grantee }}-assist-TA{{ page.taassist2-number }}.pdf" target="_blank">
-        Technical Assistance {{ page.taassist2-number }} Summary (PDF {{ page.taassist2-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-
+    {% if page.taassist1-size && page.taassist1-number != null %}<li><a href="activities/{{ page.cohort }}-{{ page.grantee }}-assist-TA{{ page.taassist1-number }}.pdf" target="_blank">
+        Technical Assistance {{ page.taassist1-number }} Summary <span class="nowrap">(PDF {{ page.taassist1-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    {% if page.taassist2-size && page.taassist2-number != null %}<li><a href="activities/{{ page.cohort }}-{{ page.grantee }}-assist-TA{{ page.taassist2-number }}.pdf" target="_blank">
+        Technical Assistance {{ page.taassist2-number }} Summary <span class="nowrap">(PDF {{ page.taassist2-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+        {% if page.call-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
+        Call Summary <span class="nowrap">(PDF {{ page.call-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+</ul>
     <!-- Call Summary Area Below -->
 
-    {% if page.call-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}.pdf" target="_blank">
-        Call Summary (PDF {{ page.call-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-     {% if page.callsummary01-size != null %} Call Summaries<br/>{% endif %}
-    <div class="grantee-supplementalData">
-    {% if page.callsummary01-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary01-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary01-date }} (PDF {{ page.callsummary01-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
     
-    {% if page.callsummary02-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary02-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary02-date }} (PDF {{ page.callsummary02-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+     {% if page.callsummary01-size != null %}<div class="label">Call Summaries:</div>{% endif %}
+    <ul class="grantee-supplementalData">
+    {% if page.callsummary01-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary01-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary01-date }} <span class="nowrap">(PDF {{ page.callsummary01-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    
+    {% if page.callsummary02-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary02-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary02-date }} <span class="nowrap">(PDF {{ page.callsummary02-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary03-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary03-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary03-date }} (PDF {{ page.callsummary03-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.callsummary03-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary03-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary03-date }} <span class="nowrap">(PDF {{ page.callsummary03-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary04-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary04-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary04-date }} (PDF {{ page.callsummary04-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.callsummary04-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary04-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary04-date }} <span class="nowrap">(PDF {{ page.callsummary04-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary05-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary05-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary05-date }} (PDF {{ page.callsummary05-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.callsummary05-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary05-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary05-date }} <span class="nowrap">(PDF {{ page.callsummary05-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary06-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary06-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary06-date }} (PDF {{ page.callsummary06-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.callsummary06-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary06-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary06-date }} <span class="nowrap">(PDF {{ page.callsummary06-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary07-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary07-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary07-date }} (PDF {{ page.callsummary07-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.callsummary07-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary07-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary07-date }} <span class="nowrap">(PDF {{ page.callsummary07-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary08-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary08-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary08-date }} (PDF {{ page.callsummary08-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.callsummary08-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary08-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary08-date }} <span class="nowrap">(PDF {{ page.callsummary08-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary09-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary09-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary09-date }} (PDF {{ page.callsummary08-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
+    {% if page.callsummary09-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary09-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary09-date }} <span class="nowrap">(PDF {{ page.callsummary08-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
 
-    {% if page.callsummary10-size != null %}<a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary10-date }}.pdf" target="_blank">
-        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary10-date }} (PDF {{ page.callsummary10-size }}) <span class="icon--file-pdf"></span></a><br/>{% endif %}
-    </div> <!-- End Supplemental Data div -->
+    {% if page.callsummary10-size != null %}<li><a href="summary/{{ page.cohort }}-{{ page.grantee }}-{{ page.callsummary10-date }}.pdf" target="_blank">
+        <img src="/img/arrow_icon.png"> Call Summary {{ page.callsummary10-date }} <span class="nowrap">(PDF {{ page.callsummary10-size }}) <span class="icon--file-pdf"></span></span></a></li>{% endif %}
+    </ul> <!-- End Supplemental Data div -->
 </div>
 
 		</div>
